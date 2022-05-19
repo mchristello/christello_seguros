@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Marvel:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
+
+/* NORMALIZE */
+
+:root {
+    /* Colors */
+    --primary: #27744F;
+    --secondary: #df8d4e;
+    --alternative: #e1dade;
+    --text-color: #0f0c68;
+    --base: #e9f9f1;
+    --details: #0bf0fc;
+
+    /* Spacings */
+    --spacing-medium: 10rem;
+    --spacing-small: 5rem;
+    --spacing-xsmall: 2.4rem;
+
+    /* Fonts-Family */
+    --font-principal: 'Zilla Slab', serif;
+    --font-secondary: 'Montserrat Alternates', sans-serif;
+    --font-alternative: 'Caveat', cursive;
+
+    /* Font-Sizes */
+    --text-large: 4em;
+    --text-medium: 2em;
+    --text-small: 1.4em;
+    --text-xsmall: 1em;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--base);
+    font-size: var(--text-small);
+    color: var(--text-color);
+}
+
+/* ESTILO INDEX */
+
+.ingresar {
+    font-size: var(--text-large);
+    font-family: var(--font-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* ESTILOS PARA LOGOS DE LA PAGINA */
+
+#logo {
+    margin-top: 2%;
+    border-radius: 60%;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+}
+
+#sublogo {
+    border-radius: 50%;
+    border-right-style: inset;
+    border-color: var(--details);
+}
+
+#favicon {
+    border-radius: 40%;
+}
+
+
+/* ESTILO BARRA DE NAVEGACION PARA MAIN */
+
+#nav-bar {
+    background-color: var(--primary);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: var(--details);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-medium);
+}
+
+/* BARRA DE NAVEGACION STICKY */
+
+.nav-bar--sticky {
+    background-color: var(--primary);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: var(--details);
+    display: flex;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-medium);
+    position: sticky;
+    top: 2rem;
+    z-index: 1;
+}
+
+.nav-link {
+    font-family: var(--font-secondary);
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    background-color: var(--secondary);
+    border-radius: 7rem;
+    color: white;
+    transform: scale(1.1, 1.1);
+    border-style: ridge;
+    border-color: white;
+}
+
+/* ESTILO LISTA DE MENU */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    margin: 0 var(--spacing-xsmall);
+    font-size: var(--text-small);
+    transition: scale 1s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+/* ¿¿¿poner borde a las opciones de menu??? */
+
+ul ul {
+    position: absolute;
+    display: none;
+    background-color: rgb(106, 190, 162);
+    border-radius: 2.5rem;
+    border-style: ridge;
+    width: 250%;
+    transition: all .5s;
+}
+
+ul ul li {
+    display: block;
+    white-space: nowrap;
+    line-height: 4rem;
+    margin-left: var(--spacing-xsmall);
+    font-size: var(--text-xsmall);
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+/* ESTILO MAIN */
+
+.main {
+    font-size: var(--text-small);
+    margin: 0 var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
+    line-height: 1rem;
+    font-family: var(--font-principal);
+    color: var(--text-color);
+}
+
+.main--flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.main img {
+    width: 40vw;
+    border-style:groove;
+    border-radius: 5%;
+    filter: drop-shadow(-16px 16px 10px black);
+}
+
+.main div {
+    margin-left: var(--spacing-small);
+}
+
+.main__title {
+    font-size: var(--text-medium);
+    text-align: center;
+    padding: var(--spacing-xsmall);
+}
+
+
+/* ESTILO SOBREMI.HTML */
+
+.sobreMi {
+    font-family: var(--font-alternative);
+    font-size: var(--text-small);
+    display: flex;
+    flex-direction: row;
+    margin: var(--spacing-small);
+    padding: var(--spacing-xsmall);
+}
+
+.sobreMi h2 {
+    font-size: var(--text-medium);
+}
+
+.sobreMi img {
+    width: 35vw;
+    filter: drop-shadow(16px 16px 10px black);
+    border-style: groove;
+    border-radius: 5%;
+    flex: 1 1 auto;
+}
+
+.sobreMi__content {
+    font-size: var(--text-xsmall);
+    text-align: center;
+    line-height: 2; 
+    border-radius: 2rem;
+    margin: 0 var(--spacing-small);
+    padding: var(--spacing-xsmall);
+    background-color: #77A6B6;    
+    box-shadow: 10px 2px 15px rgb(30, 49, 87); 
+    flex: 1 1 auto;
+}
+
+
+/* ESTILO COBERTURAS - CON GRID - */
+
+.automotores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "a a b"
+        "d c c"
+        "e e f";
+    gap: 1rem;
+    margin: var(--spacing-small);
+    color: white;
+}
+
+.automotores__title {
+    text-align: center;
+    font-size: var(--text-large);
+    padding-bottom: var(--spacing-xsmall);
+    font-family: var(--font-secondary);
+}
+
+h3 {
+    text-align: center;
+    font-size: var(--text-medium);
+    margin-bottom: var(--spacing-xsmall);
+}
+
+.automotores__content--d {
+    background-color: #287c35ae;
+    grid-area: b;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    border-radius: var(--spacing-xsmall);
+}
+
+.automotores__content--d3 {
+    background-color: #287c35ae;
+    grid-area: a;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    border-radius: var(--spacing-xsmall);
+}
+
+.automotores__content--c7 {
+    background-color: #d48735c0 ;
+    grid-area: c;
+    border-style: inset;
+    border-color: #ffff00;
+    border-radius: var(--spacing-xsmall);
+}
+
+.automotores__content--c2 {
+    background-color: #d48735c0 ;
+    grid-area: d;
+    border-style: inset;
+    border-color: #ffff00;
+    border-radius: var(--spacing-xsmall);
+}
+
+.automotores__content--c {
+    background-color: #d48735c0 ;
+    grid-area: e;
+    border-style: inset;
+    border-color: #ffff00;
+    border-radius: var(--spacing-xsmall);
+}
+
+.automotores__content--b1 {
+    background-color: #2e3ba192 ;
+    grid-area: f;
+    border-style: inset;
+    border-color: #0000ff;
+    border-radius: var(--spacing-xsmall);
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: var(--text-small);
+}
+
+
+/* ESTILO FORMULARIO COTIZACION */
+
+.cotizacion {
+    background-image: url(../img/undraw_personal_info_re_ur1n.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 8%;
+    margin-bottom: 5%;
+}
+
+.cotizacion .cotizacion__title {
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-large);
+    text-decoration: underline;
+}
+
+
+.cotizacion__form {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 65%;
+    border-style: groove;
+    border-color: var(--details);
+    border-width: .5rem;
+    border-radius: 3rem;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174043_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+    box-shadow: -15px 5px 10px rgb(70, 80, 68);
+}
+
+/* ESTILO BOTON COTIZACION */
+
+#enviar {
+    border-radius: 2rem;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 2rem;
+    background-color: var(--base);
+    cursor: pointer;
+    font-size: var(--text-small);    
+    transition: background-color 0.5s;
+}
+
+#enviar:hover {
+    background-color: var(--secondary);
+}
+
+/* ESTILOS ETIQUETAS FORMULARIO */
+
+.labels {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: var(--text-small);
+}
+
+.labels__pago {
+    font-size: var(--text-xsmall);
+}
+
+.inputs {
+    width: 60%;
+    height: 2.5rem;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+/* ESTILO HTML CONTACTO */
+/* Hacer html de contacto con GRID */
+
+.contact {
+    font-family: var(--font-principal);
+    background-image: url(../img/undraw_contact_us_re_4qqt.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50vw;
+    margin: var(--spacing-medium)
+}
+
+.contact .contact__link {
+    font-family: var(--font-secondary);
+    font-size: var(--text-small);
+    display: inline-block;
+    margin-top: 6rem;
+    margin-left: 1rem;
+}
+
+.contact .contact__icon {
+    width: 4.5rem;
+}
+
+.contact .contact__title {
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-large);
+    transition: all .5s;
+}
+
+.contact__link:hover {
+        background-color: var(--secondary);
+        border-style: outset;
+        border-color: snow;
+        border-radius: 50%;
+}
+
+/* ESTILO FOOTER PARA TODOS LOS HTML */
+/* centrar texto y los iconos a la derecha */
+#footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font-secondary);
+    font-size: var(--text-xsmall);
+    background-color: var(--alternative);
+}
+
+.footer__texto {
+    width: 70%;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 30%;
+}
+
+/* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
+@media only screen and (max-width: 770px) {
+
+    .ingresar {
+        font-size: var(--text-small);
+        margin-top: 9rem;
+    }
+    
+    /* @media para NAV */
+
+    #nav-bar {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .nav-bar--sticky {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        position: absolute;
+    }
+    
+    li {
+        display: block;
+        position: relative;
+        margin: .2rem;
+        font-size: var(--text-xsmall);
+    }
+
+    ul ul {
+        position: absolute;
+        display: none;
+        background-color: rgb(106, 190, 162);
+        border-radius: 2.5rem;
+        border-style: ridge;
+        width: 250%;
+        transform: translate(8rem, -3rem);
+    }
+
+    /* @media para el MAIN html */
+
+    .main {
+        margin: 0;
+    }
+
+    .main--flex {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main picture {
+        grid-area: b;
+    }
+
+    .main div {
+        grid-area: a;
+        margin: 2rem 3rem;
+
+    }
+
+    .main p{
+        font-size: var(--text-xsmall);
+    }
+
+    /* @media para sobrMi */
+
+    .sobreMi {
+        font-size: var(--text-xsmall);
+        display: grid;
+        justify-items: center;
+        margin: var(--spacing-xsmall);
+        padding: 0;
+    }
+
+    .sobreMi h2 {
+        font-size: var(--text-small);
+    }
+
+    .sobreMi img {
+        width: 50vw;
+        filter: drop-shadow(16px 16px 10px black);
+        border-style: groove;
+        border-radius: 5%;
+        flex: 1 1 auto;
+    }
+
+    .sobreMi__content {
+        font-size: var(--text-xsmall);
+        line-height: 1; 
+        border-radius: 2rem;
+        margin: 1rem var(--spacing-small);
+    }
+
+    /* @media para automotores */
+
+    .automotores {
+        font-size: var(--text-xsmall);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: var(--spacing-xsmall);
+    }
+
+    .automotores__title {
+        font-size: var(--text-medium);
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .automotores__content--d {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    
+    .automotores__content--d3 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    
+    .automotores__content--c7 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    
+    .automotores__content--c2 {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    
+    .automotores__content--c {
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+    
+    .automotores__content--b1 {
+        grid-column: 1/5;
+        grid-row: 6/7;
+    }
+
+    /* @media para cotizacion */
+
+    
+    .cotizacion {
+        background-image: none;
+        margin: auto;
+    }
+
+    .cotizacion .cotizacion__title {
+        font-size: var(--text-medium);
+        padding: 3rem;
+    }
+
+
+    .cotizacion__form {
+        margin: 2rem 8rem;
+        border-style: groove;
+    }
+
+    #enviar {
+        border-radius: 2rem;
+        width: 80%;
+        height: 10%;
+        margin-bottom: 1rem;
+    }
+    
+    /* @media para contacto */
+
+    .contact {
+        background-size: 100%;
+        margin: 0 var(--spacing-small);
+        padding: var(--spacing-medium) 0;
+    }
+    
+    .contact .contact__link {
+        font-size: var(--text-small);
+        display: inline-block;
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+    
+    .contact .contact__icon {
+        width: 2.5rem;
+    }
+    
+    .contact .contact__title {
+        font-size: var(--text-medium);
+    }
+
+    /* @media para footer */
+    
+    #footer {
+        flex-direction: column;
+        font-size: var(--text-xsmall);
+        grid-area: c;
+    }
+    
+    .footer__texto {
+        text-align: center;
+    }
+}
+
+/* MEDIAQUERY PARA 480PX - TAMAÑO CELULAR */
+
+@media only screen and (max-width: 480px) {
+
+    .main--flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main picture {
+        grid-area: b;
+    }
+
+    .main img {
+        width: 60vw;
+    }
+
+    .main div {
+        grid-area: a;
+    }
+
+    .main p{
+        font-size: var(--text-xsmall);
+    }
+
+    .contact {
+        background-size: 100%;
+        margin: 0 var(--spacing-xsmall);
+        padding: var(--spacing-small) 0;
+    }
+    
+    .contact .contact__link {
+        font-size: var(--text-xsmall);
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+    
+    .contact .contact__icon {
+        width: 1.5rem;
+    }
+    
+    .contact .contact__title {
+        font-size: var(--text-small);
+    }
+}
