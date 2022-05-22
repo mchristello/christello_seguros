@@ -65,8 +65,9 @@ body {
 
 #logo {
     margin-top: 2%;
-    border-radius: 60%;
+    border-radius: 40%;
     box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    width: 50vw;
 }
 
 #sublogo {
@@ -463,6 +464,10 @@ p {
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
 @media only screen and (max-width: 770px) {
 
+    #logo {
+        width: 70vw;
+    }
+
     .ingresar {
         font-size: var(--text-small);
         margin-top: 9rem;
@@ -670,6 +675,10 @@ p {
 /* MEDIAQUERY PARA 480PX - TAMAÑO CELULAR */
 
 @media only screen and (max-width: 480px) {
+
+    #logo {
+        width: 80vw;
+    }
 
     .main--flex {
         flex-direction: column;
