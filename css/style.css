@@ -58,7 +58,9 @@ body {
     align-items: center;
 }
 
-button {    
+/* estilo comentado por uso de bootstrap en el btn de ingreso */
+
+/* button {    
     font-family: var(--font-principal);
     width: 20vw;
     height: 5rem;
@@ -71,11 +73,10 @@ button {
 }
 
 button:hover {
-    border-radius: 60%;
     background-color: var(--primary);
     transform: scale(1.1, 1.1);
     font-weight: bold;
-}
+} */
 
 /* ESTILOS PARA LOGOS DE LA PAGINA */
 
@@ -111,9 +112,67 @@ button:hover {
     margin-bottom: var(--spacing-medium);
 }
 
+/* Style navbar de Bootstrap */
+
+
+.navbar {
+    background: linear-gradient(90deg, #27744F, #e1dade);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: var(--details);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-medium);
+}
+
+.navbar button {
+    margin-right: 5rem;
+}
+
+.navbar ul {
+    font-size: var(--text-small);
+    border-radius: 4rem;
+}
+
+.navbar li {
+    margin: 0 var(--spacing-xsmall);
+}
+
+.nav-item li:hover {
+    background-color: var(--secondary);
+    border-radius: 7rem;
+    transform: scale(1.1, 1.1);
+    border-style: ridge;
+    border-color: white;
+}
+
+.offcanvas {
+    background: linear-gradient(90deg, #27744F, #e1dade);   
+}
+
+.dropdown-menu {
+    font-family: var(--font-secondary);
+    background: linear-gradient(45deg, #6abea2, #e1dade);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+    font-size: .5em;
+}
+
+.dropdown-item:hover {
+    background-color: var(--secondary);
+    border-radius: 7rem;
+    transform: scale(1.1, 1.1);
+    border-style: ridge;
+    border-color: white;
+}
+
 /* BARRA DE NAVEGACION STICKY */
 
-.nav-bar--sticky {
+/* .nav-bar--sticky {
     background: linear-gradient(90deg, #27744F, #e1dade);
     border-radius: 4em;
     border-style: outset;
@@ -125,7 +184,7 @@ button:hover {
     position: sticky;
     top: 2rem;
     z-index: 1;
-}
+} */
 
 .nav-link {
     font-family: var(--font-secondary);    
@@ -145,7 +204,7 @@ button:hover {
 
 /* ESTILO LISTA DE MENU */
 
-ul {
+/* ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -164,7 +223,7 @@ li {
 
 li:hover {
     transform: scale(1.1);
-}
+} */
 
 /* ¿¿¿poner borde a las opciones de menu??? */
 
@@ -174,7 +233,7 @@ ul ul {
     background: linear-gradient(45deg, #6abea2, #e1dade);
     border-radius: 2.5rem;
     border-style: ridge;
-    width: 250%;
+    width: 230%;
     transition: all .5s;
 }
 
@@ -190,6 +249,12 @@ ul li:hover ul {
     display: block;
 }
 
+.page_title {
+    text-align: center;
+    font-size: var(--text-medium);
+    padding-bottom: var(--spacing-xsmall);
+    font-family: var(--font-secondary);
+}
 
 /* ESTILO MAIN */
 
@@ -218,26 +283,14 @@ ul li:hover ul {
     margin-left: var(--spacing-small);
 }
 
-.main__title {
-    font-size: var(--text-medium);
-    text-align: center;
-    padding: var(--spacing-xsmall);
-}
-
-
 /* ESTILO SOBREMI.HTML */
 
 .sobreMi {
     font-family: var(--font-alternative);
-    font-size: var(--text-small);
     display: flex;
     flex-direction: row;
     margin: var(--spacing-small);
     padding: var(--spacing-xsmall);
-}
-
-.sobreMi h2 {
-    font-size: var(--text-medium);
 }
 
 .sobreMi img {
@@ -249,7 +302,7 @@ ul li:hover ul {
 }
 
 .sobreMi__content {
-    font-size: var(--text-xsmall);
+    font-size: var(--text-small);
     text-align: center;
     line-height: 2; 
     border-radius: 2rem;
@@ -263,7 +316,7 @@ ul li:hover ul {
 
 /* ESTILO COBERTURAS - CON GRID - */
 
-.automotores {
+/* .automotores {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -274,14 +327,7 @@ ul li:hover ul {
     gap: 1rem;
     margin: var(--spacing-small);
     color: white;
-}
-
-.automotores__title {
-    text-align: center;
-    font-size: var(--text-large);
-    padding-bottom: var(--spacing-xsmall);
-    font-family: var(--font-secondary);
-}
+} */
 
 h3 {
     text-align: center;
@@ -293,7 +339,7 @@ h3 {
     background-color: #287c35ae;
     grid-area: b;
     border-style: inset;
-    border-color: rgb(0, 0, 0);
+    border-color: #87ed9f;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -301,7 +347,7 @@ h3 {
     background-color: #287c35ae;
     grid-area: a;
     border-style: inset;
-    border-color: rgb(0, 0, 0);
+    border-color: #87ed9f;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -309,7 +355,7 @@ h3 {
     background-color: #d48735c0 ;
     grid-area: c;
     border-style: inset;
-    border-color: #ffff00;
+    border-color: #efbb72;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -317,7 +363,7 @@ h3 {
     background-color: #d48735c0 ;
     grid-area: d;
     border-style: inset;
-    border-color: #ffff00;
+    border-color: #efbb72;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -325,7 +371,7 @@ h3 {
     background-color: #d48735c0 ;
     grid-area: e;
     border-style: inset;
-    border-color: #ffff00;
+    border-color: #efbb72;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -333,7 +379,7 @@ h3 {
     background-color: #2e3ba192 ;
     grid-area: f;
     border-style: inset;
-    border-color: #0000ff;
+    border-color: #7171f0;
     border-radius: var(--spacing-xsmall);
 }
 
@@ -353,15 +399,6 @@ p {
     margin-right: 8%;
     margin-bottom: 5%;
 }
-
-.cotizacion .cotizacion__title {
-    font-family: var(--font-primary);
-    display: flex;
-    justify-content: center;
-    font-size: var(--text-large);
-    text-decoration: underline;
-}
-
 
 .cotizacion__form {
     text-align: center;
@@ -418,7 +455,6 @@ p {
 }
 
 /* ESTILO HTML CONTACTO */
-/* Hacer html de contacto con GRID */
 
 .contact {
     font-family: var(--font-principal);
@@ -441,18 +477,10 @@ p {
     width: 4.5rem;
 }
 
-.contact .contact__title {
-    display: flex;
-    justify-content: center;
-    font-size: var(--text-large);
-    transition: all .5s;
-}
-
 .contact__link:hover {
-        background-color: var(--secondary);
-        border-style: outset;
-        border-color: snow;
-        border-radius: 50%;
+        background-color: var(--base);
+        border: inset var(--details) .2rem;
+        border-radius: 40%;
 }
 
 /* ESTILO FOOTER PARA TODOS LOS HTML */
@@ -468,12 +496,14 @@ p {
 
 .footer__texto {
     width: 70%;
+    text-align: center;
 }
 
 .footer__redes {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    gap: 3rem;
+    justify-content: center;
     width: 30%;
 }
 

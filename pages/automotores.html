@@ -7,14 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coberturas</title>
     <link id="favicon" rel="icon" href="../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
+    <!-- Navbar con Bootstrap -->
+
+    <nav class="navbar bg-light navbar-expand-md sticky-top" data-aos="fade-down">
+        <section class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img id="sublogo" src="../img/Matias Christello_llogo 1.png" width="100"
+                alt="logo Matias Christello"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreMi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Coberturas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="./automotores.html">Automotores</a></li>
+                                <li><a class="dropdown-item" href="./praxis.html">Praxis Médica</a></li>
+                                <li><a class="dropdown-item" href="#hogar">Hogar</a></li>
+                                <li><a class="dropdown-item" href="#comercio">Comercio</a></li>
+                                <li><a class="dropdown-item" href="#accidentes_personales">Accidentes Personales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cotizacion.html">Cotización</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </nav>
+
     <!-- barra de navegación con menú y submenu -->
-    <main class="main__automotores">
-        <nav class="nav-bar--sticky">
+
+    <main class="main__automotores container">
+        
+        <!-- <nav class="nav-bar--sticky">
             <a href="../index.html"><img id="sublogo" src="../img/Matias Christello_llogo 1.png" width="100"
                     alt="logo Matias Christello"></a>
             <ul>
@@ -32,78 +84,78 @@
                 <li><a class="nav-link" href="./cotizacion.html">Cotización</a></li>
                 <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <!-- inicio descripción de coberturas -->
 
-        <h2 class="automotores__title"><u>Coberturas.</u></h2>
-        <section class="automotores">
-            <div class="automotores__content--d">
-                <h3><u>"D": Todo Riesgo Sin Franquia.</u></h3>
-                    <p>- Robo total y parcial sin franquicia (incluye llantas originales de fábrica, cubiertas y
-                        auxilio, entre
-                        otras).</p>
-                    <p>- Incendio total y parcial sin franquicia</p>
-                    <p>- Destrucción total por accidente.</p>
-                    <p>- Daños parciales sin franquicia.</p>
-                    <p>- Granizo sin límite</p>
-                    <p>- Grúa y auxilio mecánico</p>
-                    <p>- Ajuste automático de suma asegurada del 10% (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita</p>
-            </div>
-            <div class="automotores__content--d3">
-                <h3><u>"D3": Todo Riesgo Con Franquia Variable.</u></h3>
-                    <p>- Robo total y parcial sin franquicia (incluye llantas originales de fábrica, cubiertas y auxilio, entre
-                        otras).</p>
-                    <p>- Incendio total y parcial sin franquicia</p>
-                    <p>- Destrucción total por accidente.</p>
-                    <p>- Daños parciales con franquicia del 10% con un mínimo de $20mil. (el arreglo que esté entre $20mil y
-                        $200mil vos pagas $20mil de franquicia, si el arreglo sale más de $200mil vos pagas el 10%)
-                    <p>- Granizo sin límite</p>
-                    <p>- Grúa y auxilio mecánico</p>
-                    <p>- Ajuste automático de suma asegurada del 10% (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita</p>
-            </div>
-            <div class="automotores__content--c7">
-                <h3><u>"C2 Full": Terceros Completos Premium.</u></h3>
-                    <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
-                    <p>- Incendio total y parcial.</p>
-                    <p>- Destrucción total por accidente.</p>
-                    <p>- Cristales y cerraduras sin límite.</p>
-                    <p>- Granizo sin límite</p>
-                    <p>- Grúa premium y auxilio mecánico.</p>
-                    <p>- Ajuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita.</p>
-            </div>
-            <div class="automotores__content--c2">
-                <h3><u>"C2": Terceros Completos.</u></h3>
-                    <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
-                    <p>- Incendio total y parcial.</p>
-                    <p>- Destrucción total por accidente.</p>
-                    <p>- Cristales y cerraduras hasta $90.000.</p>
-                    <p>- Granizo hasta $90.000.</p>
-                    <p>- Grúa y auxilio mecánico.</p>
-                    <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita.</p>
-            </div>
-            <div class="automotores__content--c">  
-                <h3><u>"C" : Terceros Total y Parcial.</u></h3>
-                    <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
-                    <p>- Incendio total y parcial.</p>
-                    <p>- Cristales y cerraduras opcionales como adicional.</p>
-                    <p>- Grúa y auxilio mecánico.</p>
-                    <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita.</p>
-            </div>
-            <div class="automotores__content--b1">
-                <h3><u>"B 1" : Terceros Total.</u></h3>
-                    <p>- Robo total (NO incluye llantas originales de fábrica, ruedas ni auxilio).</p>
-                    <p>- Incendio total y parcial.</p>
-                    <p>- Cristales y cerraduras opcionales como adicional.</p>
-                    <p>- Grúa y auxilio mecánico.</p>
-                    <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
-                    <p>- Asistencia legal gratuita.</p>
-            </div>
+        <h2 class="page_title"><u>Coberturas.</u></h2>
+        <section class="automotores row row row-cols-2">
+                <div class="automotores__content--d col-12 col-md-4 cob__d">
+                    <h3><u>"D": Todo Riesgo Sin Franquia.</u></h3>
+                        <p>- Robo total y parcial sin franquicia (incluye llantas originales de fábrica, cubiertas y
+                            auxilio, entre
+                            otras).</p>
+                        <p>- Incendio total y parcial sin franquicia</p>
+                        <p>- Destrucción total por accidente.</p>
+                        <p>- Daños parciales sin franquicia.</p>
+                        <p>- Granizo sin límite</p>
+                        <p>- Grúa y auxilio mecánico</p>
+                        <p>- Ajuste automático de suma asegurada del 10% (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita</p>
+                </div>
+                <div class="automotores__content--d3 col-12 col-md-8 cob__d">
+                    <h3><u>"D3": Todo Riesgo Con Franquia Variable.</u></h3>
+                        <p>- Robo total y parcial sin franquicia (incluye llantas originales de fábrica, cubiertas y auxilio, entre
+                            otras).</p>
+                        <p>- Incendio total y parcial sin franquicia</p>
+                        <p>- Destrucción total por accidente.</p>
+                        <p>- Daños parciales con franquicia del 10% con un mínimo de $20mil. (el arreglo que esté entre $20mil y
+                            $200mil vos pagas $20mil de franquicia, si el arreglo sale más de $200mil vos pagas el 10%)
+                        <p>- Granizo sin límite</p>
+                        <p>- Grúa y auxilio mecánico</p>
+                        <p>- Ajuste automático de suma asegurada del 10% (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita</p>
+                </div>
+                <div class="automotores__content--c7 col-12 col-md-8 cob__c">
+                    <h3><u>"C2 Full": Terceros Completos Premium.</u></h3>
+                        <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
+                        <p>- Incendio total y parcial.</p>
+                        <p>- Destrucción total por accidente.</p>
+                        <p>- Cristales y cerraduras sin límite.</p>
+                        <p>- Granizo sin límite</p>
+                        <p>- Grúa premium y auxilio mecánico.</p>
+                        <p>- Ajuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita.</p>
+                </div>
+                <div class="automotores__content--c2 col-12 col-md-4 cob__c">
+                    <h3><u>"C2": Terceros Completos.</u></h3>
+                        <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
+                        <p>- Incendio total y parcial.</p>
+                        <p>- Destrucción total por accidente.</p>
+                        <p>- Cristales y cerraduras hasta $90.000.</p>
+                        <p>- Granizo hasta $90.000.</p>
+                        <p>- Grúa y auxilio mecánico.</p>
+                        <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita.</p>
+                </div>
+                <div class="automotores__content--c col-12 col-md-8 cob__c">  
+                    <h3><u>"C" : Terceros Total y Parcial.</u></h3>
+                        <p>- Robo total y parcial (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
+                        <p>- Incendio total y parcial.</p>
+                        <p>- Cristales y cerraduras opcionales como adicional.</p>
+                        <p>- Grúa y auxilio mecánico.</p>
+                        <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita.</p>
+                </div>
+                <div class="automotores__content--b1 col-12 col-md-4 cob__b">
+                    <h3><u>"B 1" : Terceros Total.</u></h3>
+                        <p>- Robo total (NO incluye llantas originales de fábrica, ruedas ni auxilio).</p>
+                        <p>- Incendio total y parcial.</p>
+                        <p>- Cristales y cerraduras opcionales como adicional.</p>
+                        <p>- Grúa y auxilio mecánico.</p>
+                        <p>- Aujuste automático de suma asegurada del 10%. (opcional hasta el 50%)</p>
+                        <p>- Asistencia legal gratuita.</p>
+                </div>
         </section>
     </main>
     <hr>
@@ -126,6 +178,8 @@
                     alt="whataspp"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
