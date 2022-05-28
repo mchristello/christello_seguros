@@ -144,8 +144,7 @@ button:hover {
     background-color: var(--secondary);
     border-radius: 7rem;
     transform: scale(1.1, 1.1);
-    border-style: ridge;
-    border-color: white;
+    border: ridge white;
 }
 
 #offcanvasNavbar {
@@ -159,15 +158,14 @@ button:hover {
 
 .dropdown-item {
     color: var(--text-color);
-    font-size: .5em;
+    transition: all .3s;
 }
 
 .dropdown-item:hover {
     background-color: var(--secondary);
     border-radius: 7rem;
     transform: scale(1.1, 1.1);
-    border-style: ridge;
-    border-color: white;
+    border: ridge white;
 }
 
 /* BARRA DE NAVEGACION STICKY */
@@ -233,7 +231,7 @@ ul ul {
     background: linear-gradient(45deg, #6abea2, #e1dade);
     border-radius: 2.5rem;
     border-style: ridge;
-    width: 230%;
+    width: auto;
     transition: all .5s;
 }
 
@@ -242,7 +240,7 @@ ul ul li {
     white-space: nowrap;
     line-height: 4rem;
     margin-left: var(--spacing-xsmall);
-    font-size: var(--text-xsmall);
+    font-size: .5em;
 }
 
 ul li:hover ul {
