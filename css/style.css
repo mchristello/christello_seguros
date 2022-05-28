@@ -148,8 +148,8 @@ button:hover {
     border-color: white;
 }
 
-.offcanvas {
-    background: linear-gradient(90deg, #27744F, #e1dade);   
+#offcanvasNavbar {
+    background: linear-gradient(90deg, #27744F, #e1dade);
 }
 
 .dropdown-menu {
@@ -485,6 +485,7 @@ p {
 
 /* ESTILO FOOTER PARA TODOS LOS HTML */
 /* centrar texto y los iconos a la derecha */
+
 #footer {
     display: flex;
     align-items: center;
@@ -535,7 +536,6 @@ p {
         list-style: none;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
         position: absolute;
     }
     
@@ -546,15 +546,14 @@ p {
         font-size: var(--text-xsmall);
     }
 
-    ul ul {
+    /* ul ul {
         position: absolute;
         display: none;
         background-color: rgb(106, 190, 162);
         border-radius: 2.5rem;
         border-style: ridge;
         width: 250%;
-        transform: translate(8rem, -3rem);
-    }
+    } */
 
     /* @media para el MAIN html */
 
