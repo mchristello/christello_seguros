@@ -223,8 +223,6 @@ li:hover {
     transform: scale(1.1);
 } */
 
-/* ¿¿¿poner borde a las opciones de menu??? */
-
 ul ul {
     position: absolute;
     display: none;
