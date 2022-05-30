@@ -148,7 +148,7 @@ button:hover {
 }
 
 #offcanvasNavbar {
-    background: linear-gradient(90deg, #27744F, #e1dade);
+    background: linear-gradient(90deg, #27744F, #e1dade) important!;
 }
 
 .dropdown-menu {
