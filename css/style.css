@@ -98,9 +98,9 @@ button:hover {
 }
 
 
-/* ESTILO BARRA DE NAVEGACION PARA MAIN */
+/* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
 
-#nav-bar {
+/* #nav-bar {
     background: linear-gradient(90deg, #27744F, #e1dade);
     border-radius: 4em;
     border-style: outset;
@@ -110,7 +110,7 @@ button:hover {
     box-shadow: 5px 15px 25px rgb(74, 71, 71);
     margin: var(--spacing-xsmall);
     margin-bottom: var(--spacing-medium);
-}
+} */
 
 /* Style navbar de Bootstrap */
 
@@ -148,7 +148,7 @@ button:hover {
 }
 
 #offcanvasNavbar {
-    background: linear-gradient(90deg, #27744F, #e1dade) important!;
+    background: linear-gradient(90deg, #27744f, #e1dade) important!;
 }
 
 .dropdown-menu {
@@ -168,7 +168,7 @@ button:hover {
     border: ridge white;
 }
 
-/* BARRA DE NAVEGACION STICKY */
+/* BARRA DE NAVEGACION STICKY - fuera de uso */
 
 /* .nav-bar--sticky {
     background: linear-gradient(90deg, #27744F, #e1dade);
@@ -247,9 +247,10 @@ ul li:hover ul {
 
 .page_title {
     text-align: center;
-    font-size: var(--text-medium);
+    font-size: var(--text-large);
     padding-bottom: var(--spacing-xsmall);
-    font-family: var(--font-secondary);
+    font-family: var(--font-alternative);
+    font-weight: bold;
 }
 
 /* ESTILO MAIN */
@@ -312,7 +313,7 @@ ul li:hover ul {
 
 /* ESTILO COBERTURAS - CON GRID - */
 
-/* .automotores {
+.automotores {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -323,7 +324,7 @@ ul li:hover ul {
     gap: 1rem;
     margin: var(--spacing-small);
     color: white;
-} */
+}
 
 h3 {
     text-align: center;
@@ -446,6 +447,12 @@ p {
     height: 2.5rem;
 }
 
+.inputs:focus {
+    outline-color: var(--secondary);
+    outline-width: 3px;
+    outline-style:inset;
+}
+
 ::placeholder {
     text-align: center;
 }
@@ -480,7 +487,6 @@ p {
 }
 
 /* ESTILO FOOTER PARA TODOS LOS HTML */
-/* centrar texto y los iconos a la derecha */
 
 #footer {
     display: flex;
@@ -505,6 +511,7 @@ p {
 }
 
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
+
 @media only screen and (max-width: 770px) {
 
     #logo {
