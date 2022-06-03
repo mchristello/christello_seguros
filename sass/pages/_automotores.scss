@@ -1,0 +1,68 @@
+
+/* ESTILO COBERTURAS - CON GRID - */
+
+.page_title {
+    text-align: center;
+    font-size: $text-large;
+    padding-bottom: $spacing-xsmall;
+    font-family: $font-alternative;
+    font-weight: bold;
+}
+
+.automotores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "a a b"
+        "d c c"
+        "e e f";
+    gap: 1rem;
+    margin: $spacing-small;
+    color: white;
+    & h3 {
+        text-align: center;
+        font-size: $text-medium;
+        margin-bottom: $spacing-xsmall;
+    }
+    & .automotores__content--d3 {
+        background-color: #287c35ae;
+        grid-area: a;
+        border-style: inset;
+        border-color: #87ed9f;
+        border-radius: $spacing-xsmall;
+    }
+    & .automotores__content--c7 {
+        background-color: #d48735c0 ;
+        grid-area: c;
+        border-style: inset;
+        border-color: #efbb72;
+        border-radius: $spacing-xsmall;
+    }
+    & .automotores__content--c2 {
+        background-color: #d48735c0 ;
+        grid-area: d;
+        border-style: inset;
+        border-color: #efbb72;
+        border-radius: $spacing-xsmall;
+    }
+    & .automotores__content--c {
+        background-color: #d48735c0 ;
+        grid-area: e;
+        border-style: inset;
+        border-color: #efbb72;
+        border-radius: $spacing-xsmall;
+    }
+    & .automotores__content--b1 {
+        background-color: #2e3ba192 ;
+        grid-area: f;
+        border-style: inset;
+        border-color: #7171f0;
+        border-radius: $spacing-xsmall;
+    }
+    & p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: $text-small;
+    }
+}

@@ -1,0 +1,122 @@
+
+#sublogo {
+    border-radius: 50%;
+    border-right-style: inset;
+    border-color: $details;
+}
+
+/* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
+
+/* #nav-bar {
+    background: linear-gradient(90deg, #27744F, #e1dade);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: var(--details);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-medium);
+} */
+
+/* Style navbar de Bootstrap */
+
+.navbar {
+    background: linear-gradient(90deg, #27744F, #e1dade);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: $details;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: $spacing-xsmall;
+    margin-bottom: $spacing-medium;
+    & button {
+        margin-right: 5rem;
+    }
+    & ul {
+        font-size: $text-small;
+        border-radius: 4rem;
+    }
+    & li {
+        margin: 0 $spacing-xsmall;
+    }
+}
+
+.nav-item li:hover {
+    background-color: $secondary;
+    border-radius: 7rem;
+    transform: scale(1.1, 1.1);
+    border: ridge white;
+}
+
+.dropdown-menu {
+    font-family: $font-secondary;
+    background: linear-gradient(45deg, #6abea2, #e1dade);
+}
+
+.dropdown-item {
+    color: $text-color;
+    transition: all .3s;
+    font-size: 1.8rem;
+    &:hover {
+        background-color: $secondary;
+        border-radius: 7rem;
+        transform: scale(1.1, 1.1);
+        border: ridge white;
+    }
+}
+
+.nav-link {
+    font-family: $font-secondary;    
+    color: $text-color;
+    text-decoration: none;
+    transition: all .5s;
+    &:hover {
+        background-color: $secondary;
+        border-radius: 7rem;
+        color: white;
+        transform: scale(1.1, 1.1);
+        border-style: ridge;
+        border-color: white;
+    }
+}
+
+/* ESTILO LISTA DE MENU */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    & ul {
+        position: absolute;
+        display: none;
+        background: linear-gradient(45deg, #6abea2, #e1dade);
+        border-radius: 2.5rem;
+        border-style: ridge;
+        width: auto;
+        transition: all .5s;
+        & ul li {
+            display: block;
+            white-space: nowrap;
+            line-height: 4rem;
+            margin-left: $spacing-small;
+        }
+    }
+    & li:hover ul {
+        display: block;
+    }
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    margin: 0 $spacing-xsmall;
+    transition: scale 1s;
+    &:hover {
+    transform: scale(1.1);
+    }
+}
+

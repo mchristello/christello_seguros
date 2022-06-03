@@ -1,0 +1,34 @@
+
+/* Style contacto.html */
+
+.page_title {
+    text-align: center;
+    font-size: $text-large;
+    padding-bottom: $spacing-xsmall;
+    font-family: $font-alternative;
+    font-weight: bold;
+}
+
+.contact {
+    font-family: $font-principal;
+    background-image: url(../img/undraw_contact_us_re_4qqt.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50vw;
+    margin: $spacing-medium;
+    & .contact__link {
+        font-family: $font-secondary;
+        font-size: $text-small;
+        display: inline-block;
+        margin-top: 6rem;
+        margin-left: 1rem;
+        & .contact__link:hover {
+            background-color: $base;
+            border: inset $details .2rem;
+            border-radius: 40%;
+        }
+    }
+    .contact__icon {
+        width: 4.5rem;
+    }
+}

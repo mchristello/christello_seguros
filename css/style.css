@@ -31,9 +31,9 @@
     --text-medium: 2em;
     --text-small: 1.4em;
     --text-xsmall: 1em;
-
 }
-* {
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,15 +48,20 @@ body {
     background: linear-gradient(140deg, #df8d4e, #e9f9f1);
     font-size: var(--text-small);
     color: var(--text-color);
-}
+} */
 
 /* ESTILO INDEX */
 
-.ingresar {
+/* .ingresar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
+
+.ingresar header {
+    width: 35vw;
+} */
 
 /* estilo comentado por uso de bootstrap en el btn de ingreso */
 
@@ -80,11 +85,10 @@ button:hover {
 
 /* ESTILOS PARA LOGOS DE LA PAGINA */
 
-#logo {
+/* #logo {
     margin-top: 2%;
     border-radius: 40%;
     box-shadow: 5px 15px 25px rgb(74, 71, 71);
-    width: 40vw;
 }
 
 #sublogo {
@@ -95,7 +99,7 @@ button:hover {
 
 #favicon {
     border-radius: 40%;
-}
+} */
 
 
 /* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
@@ -115,7 +119,7 @@ button:hover {
 /* Style navbar de Bootstrap */
 
 
-.navbar {
+/* .navbar {
     background: linear-gradient(90deg, #27744F, #e1dade);
     border-radius: 4em;
     border-style: outset;
@@ -147,10 +151,6 @@ button:hover {
     border: ridge white;
 }
 
-#offcanvasNavbar {
-    background: linear-gradient(90deg, #27744f, #e1dade) important!;
-}
-
 .dropdown-menu {
     font-family: var(--font-secondary);
     background: linear-gradient(45deg, #6abea2, #e1dade);
@@ -166,7 +166,7 @@ button:hover {
     border-radius: 7rem;
     transform: scale(1.1, 1.1);
     border: ridge white;
-}
+} */
 
 /* BARRA DE NAVEGACION STICKY - fuera de uso */
 
@@ -184,7 +184,7 @@ button:hover {
     z-index: 1;
 } */
 
-.nav-link {
+/* .nav-link {
     font-family: var(--font-secondary);    
     color: var(--text-color);
     text-decoration: none;
@@ -198,7 +198,7 @@ button:hover {
     transform: scale(1.1, 1.1);
     border-style: ridge;
     border-color: white;
-}
+} */
 
 /* ESTILO LISTA DE MENU */
 
@@ -208,20 +208,13 @@ button:hover {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 100vw;
 }
 
 li {
     display: inline-block;
     position: relative;
     margin: 0 var(--spacing-xsmall);
-    font-size: var(--text-small);
-    transition: scale 1s;
 }
-
-li:hover {
-    transform: scale(1.1);
-} */
 
 ul ul {
     position: absolute;
@@ -243,19 +236,19 @@ ul ul li {
 
 ul li:hover ul {
     display: block;
-}
+} */
 
-.page_title {
+/* .page_title {
     text-align: center;
     font-size: var(--text-large);
     padding-bottom: var(--spacing-xsmall);
     font-family: var(--font-alternative);
     font-weight: bold;
-}
+} */
 
 /* ESTILO MAIN */
 
-.main {
+/* .main {
     font-size: var(--text-small);
     margin: 0 var(--spacing-medium);
     margin-bottom: var(--spacing-small);
@@ -278,11 +271,11 @@ ul li:hover ul {
 
 .main div {
     margin-left: var(--spacing-small);
-}
+} */
 
 /* ESTILO SOBREMI.HTML */
 
-.sobreMi {
+/* .sobreMi {
     font-family: var(--font-alternative);
     display: flex;
     flex-direction: row;
@@ -308,12 +301,12 @@ ul li:hover ul {
     background-color: #77A6B6;    
     box-shadow: 10px 2px 15px rgb(30, 49, 87); 
     flex: 1 1 auto;
-}
+} */
 
 
 /* ESTILO COBERTURAS - CON GRID - */
 
-.automotores {
+/* .automotores {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -384,12 +377,12 @@ p {
     text-align: center;
     line-height: 1.5;
     font-size: var(--text-small);
-}
+} */
 
 
 /* ESTILO FORMULARIO COTIZACION */
 
-.cotizacion {
+/* .cotizacion {
     background-image: url(../img/undraw_personal_info_re_ur1n.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -411,11 +404,11 @@ p {
     background-size: cover;
     line-height: 1.5;
     box-shadow: -15px 5px 10px rgb(70, 80, 68);
-}
+} */
 
 /* ESTILO BOTON COTIZACION */
 
-#enviar {
+/* #enviar {
     border-radius: 2rem;
     width: 80%;
     height: 20%;
@@ -428,11 +421,11 @@ p {
 
 #enviar:hover {
     background-color: var(--secondary);
-}
+} */
 
 /* ESTILOS ETIQUETAS FORMULARIO */
 
-.labels {
+/* .labels {
     text-decoration: underline;
     font-weight: bold;
     font-size: var(--text-small);
@@ -455,11 +448,11 @@ p {
 
 ::placeholder {
     text-align: center;
-}
+} */
 
 /* ESTILO HTML CONTACTO */
 
-.contact {
+/* .contact {
     font-family: var(--font-principal);
     background-image: url(../img/undraw_contact_us_re_4qqt.svg);
     background-repeat: no-repeat;
@@ -484,11 +477,11 @@ p {
         background-color: var(--base);
         border: inset var(--details) .2rem;
         border-radius: 40%;
-}
+} */
 
 /* ESTILO FOOTER PARA TODOS LOS HTML */
 
-#footer {
+/* .footer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -508,24 +501,24 @@ p {
     gap: 3rem;
     justify-content: center;
     width: 30%;
-}
+} */
 
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
 
 @media only screen and (max-width: 770px) {
 
-    #logo {
-        width: 70vw;
+/*     .ingresar header {
+        width: 60%;
     }
 
     .ingresar {
         font-size: var(--text-small);
         margin-top: 9rem;
-    }
+    } */
     
     /* @media para NAV */
 
-    #nav-bar {
+/*     #nav-bar {
         flex-direction: column;
         margin: 1rem;
     }
@@ -547,7 +540,7 @@ p {
         position: relative;
         margin: .2rem;
         font-size: var(--text-xsmall);
-    }
+    } */
 
     /* ul ul {
         position: absolute;
@@ -560,7 +553,7 @@ p {
 
     /* @media para el MAIN html */
 
-    .main {
+/*     .main {
         margin: 0;
     }
 
@@ -569,24 +562,17 @@ p {
         align-items: center;
         justify-content: center;
     }
-
-    .main picture {
-        grid-area: b;
-    }
-
     .main div {
-        grid-area: a;
         margin: 2rem 3rem;
-
     }
 
     .main p{
         font-size: var(--text-xsmall);
-    }
+    }*/
 
     /* @media para sobrMi */
 
-    .sobreMi {
+    /* .sobreMi {
         font-size: var(--text-xsmall);
         display: grid;
         justify-items: center;
@@ -610,12 +596,12 @@ p {
         font-size: var(--text-xsmall);
         line-height: 1; 
         border-radius: 2rem;
-        margin: 1rem var(--spacing-small);
+        margin: 1rem var(--spacing-small); */
     }
 
     /* @media para automotores */
 
-    .automotores {
+    /* .automotores {
         font-size: var(--text-xsmall);
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -656,12 +642,12 @@ p {
     .automotores__content--b1 {
         grid-column: 1/5;
         grid-row: 6/7;
-    }
+    } */
 
     /* @media para cotizacion */
 
     
-    .cotizacion {
+    /* .cotizacion {
         background-image: none;
         margin: auto;
     }
@@ -682,11 +668,11 @@ p {
         width: 80%;
         height: 10%;
         margin-bottom: 1rem;
-    }
+    } */
     
     /* @media para contacto */
 
-    .contact {
+    /* .contact {
         background-size: 100%;
         margin: 0 var(--spacing-small);
         padding: var(--spacing-medium) 0;
@@ -705,11 +691,11 @@ p {
     
     .contact .contact__title {
         font-size: var(--text-medium);
-    }
+    } */
 
     /* @media para footer */
     
-    #footer {
+    /* #footer {
         flex-direction: column;
         font-size: var(--text-xsmall);
         grid-area: c;
@@ -717,14 +703,14 @@ p {
     
     .footer__texto {
         text-align: center;
-    }
-}
+    } */
+
 
 /* MEDIAQUERY PARA 480PX - TAMAÑO CELULAR */
 
 @media only screen and (max-width: 480px) {
 
-    #logo {
+    /* #logo {
         width: 80vw;
     }
 
@@ -737,7 +723,7 @@ p {
     }
 
     .main img {
-        width: 60vw;
+        width: 80vw;
     }
 
     .main div {
@@ -766,5 +752,5 @@ p {
     
     .contact .contact__title {
         font-size: var(--text-small);
-    }
+    } */
 }

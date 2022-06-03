@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/* Externos */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Marvel:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+/* Variables */
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+#favicon {
+  border-radius: 40%; }
+
+body {
+  font-family: "Zilla Slab", serif;
+  background: linear-gradient(140deg, #df8d4e, #e9f9f1);
+  font-size: 1.4em;
+  color: #0f0c68; }
+
+/* Header */
+#sublogo {
+  border-radius: 50%;
+  border-right-style: inset;
+  border-color: #0bf0fc; }
+
+/* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
+/* #nav-bar {
+    background: linear-gradient(90deg, #27744F, #e1dade);
+    border-radius: 4em;
+    border-style: outset;
+    border-color: var(--details);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 15px 25px rgb(74, 71, 71);
+    margin: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-medium);
+} */
+/* Style navbar de Bootstrap */
+.navbar {
+  background: linear-gradient(90deg, #27744F, #e1dade);
+  border-radius: 4em;
+  border-style: outset;
+  border-color: #0bf0fc;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 15px 25px #4a4747;
+  margin: 2.4rem;
+  margin-bottom: 10rem; }
+  .navbar button {
+    margin-right: 5rem; }
+  .navbar ul {
+    font-size: 1.4em;
+    border-radius: 4rem; }
+  .navbar li {
+    margin: 0 2.4rem; }
+
+.nav-item li:hover {
+  background-color: #df8d4e;
+  border-radius: 7rem;
+  transform: scale(1.1, 1.1);
+  border: ridge white; }
+
+.dropdown-menu {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: linear-gradient(45deg, #6abea2, #e1dade); }
+
+.dropdown-item {
+  color: #0f0c68;
+  transition: all .3s;
+  font-size: 1.8rem; }
+  .dropdown-item:hover {
+    background-color: #df8d4e;
+    border-radius: 7rem;
+    transform: scale(1.1, 1.1);
+    border: ridge white; }
+
+.nav-link {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #0f0c68;
+  text-decoration: none;
+  transition: all .5s; }
+  .nav-link:hover {
+    background-color: #df8d4e;
+    border-radius: 7rem;
+    color: white;
+    transform: scale(1.1, 1.1);
+    border-style: ridge;
+    border-color: white; }
+
+/* ESTILO LISTA DE MENU */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+  ul ul {
+    position: absolute;
+    display: none;
+    background: linear-gradient(45deg, #6abea2, #e1dade);
+    border-radius: 2.5rem;
+    border-style: ridge;
+    width: auto;
+    transition: all .5s; }
+    ul ul ul li {
+      display: block;
+      white-space: nowrap;
+      line-height: 4rem;
+      margin-left: 5rem; }
+  ul li:hover ul {
+    display: block; }
+
+li {
+  display: inline-block;
+  position: relative;
+  margin: 0 2.4rem;
+  transition: scale 1s; }
+  li:hover {
+    transform: scale(1.1); }
+
+/* Home */
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; }
+  .ingresar header {
+    width: 35vw; }
+
+#logo {
+  margin-top: 2%;
+  border-radius: 40%;
+  box-shadow: 5px 15px 25px #4a4747; }
+
+/* Comentado por uso de bootstrap en boton de ingreso */
+/* button {    
+    font-family: var(--font-principal);
+    width: 20vw;
+    height: 5rem;
+    font-size: var(--text-medium);
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    background-color: snow;
+    transition: all .6s;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--primary);
+        transform: scale(1.1, 1.1);
+        font-weight: bold;
+    }
+}
+ */
+/* Main */
+.main {
+  font-size: 1.4em;
+  margin: 0 10rem;
+  margin-bottom: 5rem;
+  line-height: 1.5;
+  font-family: "Zilla Slab", serif;
+  color: #0f0c68;
+  text-align: center; }
+  .main .page_title {
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 2.4rem;
+    font-family: "Caveat", cursive;
+    font-weight: bold; }
+  .main .main--flex {
+    display: flex;
+    flex-direction: row; }
+  .main .main--flex img {
+    width: 40vw;
+    border-style: groove;
+    border-radius: 5%;
+    filter: drop-shadow(-16px 16px 10px black); }
+  .main .main--flex div {
+    margin-left: 5rem; }
+
+/* SobreMi */
+/* ESTILO SOBREMI.HTML */
+.sobreMi {
+  font-family: "Caveat", cursive;
+  display: flex;
+  flex-direction: row;
+  margin: 5rem;
+  padding: 2.4rem; }
+  .sobreMi img {
+    width: 35vw;
+    filter: drop-shadow(16px 16px 10px black);
+    border-style: groove;
+    border-radius: 5%;
+    flex: 1 1 auto; }
+  .sobreMi .sobreMi__content {
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 2;
+    border-radius: 2rem;
+    margin: 0 5rem;
+    padding: 2.4rem;
+    background-color: #77A6B6;
+    box-shadow: 10px 2px 15px #1e3157;
+    flex: 1 1 auto; }
+    .sobreMi .sobreMi__content .page_title {
+      text-align: center;
+      font-size: 2em;
+      padding-bottom: 2.4rem;
+      font-family: "Caveat", cursive;
+      font-weight: bold; }
+
+/* Automotores */
+/* ESTILO COBERTURAS - CON GRID - */
+.page_title {
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold; }
+
+.automotores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a a b" "d c c" "e e f";
+  gap: 1rem;
+  margin: 5rem;
+  color: white; }
+  .automotores h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2.4rem; }
+  .automotores .automotores__content--d3 {
+    background-color: #287c35ae;
+    grid-area: a;
+    border-style: inset;
+    border-color: #87ed9f;
+    border-radius: 2.4rem; }
+  .automotores .automotores__content--c7 {
+    background-color: #d48735c0;
+    grid-area: c;
+    border-style: inset;
+    border-color: #efbb72;
+    border-radius: 2.4rem; }
+  .automotores .automotores__content--c2 {
+    background-color: #d48735c0;
+    grid-area: d;
+    border-style: inset;
+    border-color: #efbb72;
+    border-radius: 2.4rem; }
+  .automotores .automotores__content--c {
+    background-color: #d48735c0;
+    grid-area: e;
+    border-style: inset;
+    border-color: #efbb72;
+    border-radius: 2.4rem; }
+  .automotores .automotores__content--b1 {
+    background-color: #2e3ba192;
+    grid-area: f;
+    border-style: inset;
+    border-color: #7171f0;
+    border-radius: 2.4rem; }
+  .automotores p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.4em; }
+
+/* Praxis */
+/* Style praxis.html */
+.page_title {
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold; }
+
+/* Cotizacion */
+/* ESTILO FORMULARIO COTIZACION */
+.page_title {
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold; }
+
+.cotizacion {
+  background-image: url(../img/undraw_personal_info_re_ur1n.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 8%;
+  margin-bottom: 5%; }
+  .cotizacion .cotizacion__form {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 65%;
+    border-style: groove;
+    border-color: #0bf0fc;
+    border-width: .5rem;
+    border-radius: 3rem;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174043_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+    box-shadow: -15px 5px 10px #465044; }
+    .cotizacion .cotizacion__form .labels {
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1.4em; }
+    .cotizacion .cotizacion__form .labels__pago {
+      font-size: 1em; }
+    .cotizacion .cotizacion__form .inputs {
+      width: 60%;
+      height: 2.5rem; }
+      .cotizacion .cotizacion__form .inputs .inputs:focus {
+        outline-color: #df8d4e;
+        outline-width: 3px;
+        outline-style: inset; }
+    .cotizacion .cotizacion__form ::placeholder {
+      text-align: center; }
+
+/* ESTILO BOTON COTIZACION */
+#enviar {
+  border-radius: 2rem;
+  width: 80%;
+  height: 20%;
+  margin-bottom: 2rem;
+  background-color: #e9f9f1;
+  cursor: pointer;
+  font-size: 1.4em;
+  transition: background-color 0.5s; }
+  #enviar:hover {
+    background-color: #df8d4e; }
+
+/* Contacto */
+/* Style contacto.html */
+.page_title {
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold; }
+
+.contact {
+  font-family: "Zilla Slab", serif;
+  background-image: url(../img/undraw_contact_us_re_4qqt.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50vw;
+  margin: 10rem; }
+  .contact .contact__link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-top: 6rem;
+    margin-left: 1rem; }
+    .contact .contact__link .contact__link:hover {
+      background-color: #e9f9f1;
+      border: inset #0bf0fc 0.2rem;
+      border-radius: 40%; }
+  .contact .contact__icon {
+    width: 4.5rem; }
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1em;
+  background: linear-gradient(140deg, #dfb595, #e9f9f1); }
+  .footer .footer__texto {
+    width: 70%;
+    text-align: center; }
+  .footer .footer__redes {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    width: 30%; }
+
+/* @mediaquerys */
+/* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
+@media only screen and (max-width: 770px) {
+  .ingresar {
+    font-size: 1em;
+    margin-top: 9rem; }
+    .ingresar header {
+      width: 60%; }
+  /* @media para el MAIN html */
+  .main {
+    margin: 0; }
+    .main .main--flex {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .main div {
+      margin: 2rem 3rem; }
+    .main p {
+      font-size: 1em; }
+  /* @media para sobrEMi */
+  .sobreMi {
+    font-size: 1em;
+    display: grid;
+    justify-items: center;
+    margin: 2.4rem;
+    padding: 0; }
+    .sobreMi h2 {
+      font-size: 1.4em; }
+    .sobreMi img {
+      width: 50vw;
+      filter: drop-shadow(16px 16px 10px black);
+      border-style: groove;
+      border-radius: 5%;
+      flex: 1 1 auto; }
+    .sobreMi .sobreMi__content {
+      font-size: 1em;
+      line-height: 1;
+      border-radius: 2rem;
+      margin: 1rem 5rem; }
+  /* @media para automotores */
+  .automotores {
+    font-size: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 2.4rem; }
+    .automotores .automotores__title {
+      font-size: 2em;
+      margin-top: 5rem;
+      padding-bottom: 1rem; }
+    .automotores .automotores__content--d {
+      grid-column: 1/5;
+      grid-row: 1/2; }
+    .automotores .automotores__content--d3 {
+      grid-column: 1/5;
+      grid-row: 2/3; }
+    .automotores .automotores__content--c7 {
+      grid-column: 1/5;
+      grid-row: 3/4; }
+    .automotores .automotores__content--c2 {
+      grid-column: 1/5;
+      grid-row: 4/5; }
+    .automotores .automotores__content--c {
+      grid-column: 1/5;
+      grid-row: 5/6; }
+    .automotores .automotores__content--b1 {
+      grid-column: 1/5;
+      grid-row: 6/7; }
+  /* @media para cotizacion */
+  .cotizacion {
+    background-image: none;
+    margin: auto; }
+    .cotizacion .cotizacion__title {
+      font-size: 2em;
+      padding: 3rem; }
+    .cotizacion .cotizacion__form {
+      margin: 2rem 8rem;
+      border-style: groove; }
+  #enviar {
+    border-radius: 2rem;
+    width: 80%;
+    height: 10%;
+    margin-bottom: 1rem; }
+  /* @media para contacto */
+  .contact {
+    background-size: 100%;
+    margin: 0 5rem;
+    padding: 10rem 0; }
+    .contact .contact__link {
+      font-size: 1.4em;
+      display: inline-block;
+      margin-top: 4rem;
+      margin-left: 1rem; }
+    .contact .contact__icon {
+      width: 2.5rem; }
+  /* @media para footer */
+  .footer {
+    flex-direction: column;
+    font-size: var(--text-xsmall);
+    grid-area: c; }
+    .footer .footer__texto {
+      text-align: center; } }
+
+/* MEDIAQUERY PARA 480PX - TAMAÑO CELULAR */
+@media only screen and (max-width: 480px) {
+  #logo {
+    width: 80vw; }
+  .main--flex {
+    flex-direction: column;
+    align-items: center; }
+  .main img {
+    width: 80vw; }
+  .main p {
+    font-size: 1em; }
+  .contact {
+    background-size: 100%;
+    margin: 0 2.4rem;
+    padding: 5rem 0; }
+  .contact .contact__link {
+    font-size: 1em;
+    margin-top: 4rem;
+    margin-left: 1rem; }
+  .contact .contact__icon {
+    width: 1.5rem; }
+  .contact .contact__title {
+    font-size: 1.4em; } }
