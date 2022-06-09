@@ -16,6 +16,14 @@ html {
 body {
     font-family: $font-principal;
     background: linear-gradient(140deg, #df8d4e, #e9f9f1);
-    font-size: $text-small;
+    font-size: map-get($font-sizes, text-small);
     color: $text-color;
+}
+
+.page_title {
+    text-align: center;
+    font-size: map-get($font-sizes, text-large);
+    padding-bottom: $spacing-xsmall;
+    font-family: $font-alternative;
+    font-weight: bold;
 }

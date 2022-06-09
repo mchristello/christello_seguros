@@ -4,6 +4,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
 /* Variables */
+/* se uso .text-intermidiate como class en el titulo de la página sobreMi.html */
+.text-large {
+  font-size: 4em; }
+
+.text-medium {
+  font-size: 2em; }
+
+.text-intermidiate {
+  font-size: 1.8em; }
+
+.text-small {
+  font-size: 1.4em; }
+
+.text-xsmall {
+  font-size: 1em; }
+
+/* Mixins */
 /* Normalize */
 * {
   margin: 0;
@@ -21,6 +38,13 @@ body {
   background: linear-gradient(140deg, #df8d4e, #e9f9f1);
   font-size: 1.4em;
   color: #0f0c68; }
+
+.page_title {
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold; }
 
 /* Header */
 #sublogo {
@@ -50,7 +74,8 @@ body {
   flex-direction: row;
   box-shadow: 5px 15px 25px #4a4747;
   margin: 2.4rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  z-index: 1; }
   .navbar button {
     margin-right: 5rem; }
   .navbar ul {
@@ -102,12 +127,11 @@ ul {
   ul ul {
     position: absolute;
     display: none;
-    background: linear-gradient(45deg, #6abea2, #e1dade);
     border-radius: 2.5rem;
     border-style: ridge;
     width: auto;
     transition: all .5s; }
-    ul ul ul li {
+    ul ul li {
       display: block;
       white-space: nowrap;
       line-height: 4rem;
@@ -164,21 +188,19 @@ li {
   font-family: "Zilla Slab", serif;
   color: #0f0c68;
   text-align: center; }
-  .main .page_title {
-    text-align: center;
-    font-size: 4em;
-    padding-bottom: 2.4rem;
-    font-family: "Caveat", cursive;
-    font-weight: bold; }
-  .main .main--flex {
+  .main--flex {
     display: flex;
-    flex-direction: row; }
-  .main .main--flex img {
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    /* display: flex;
+        flex-direction: row; */ }
+  .main--flex img {
     width: 40vw;
     border-style: groove;
     border-radius: 5%;
     filter: drop-shadow(-16px 16px 10px black); }
-  .main .main--flex div {
+  .main--flex div {
     margin-left: 5rem; }
 
 /* SobreMi */
@@ -193,34 +215,21 @@ li {
     width: 35vw;
     filter: drop-shadow(16px 16px 10px black);
     border-style: groove;
-    border-radius: 5%;
+    border-radius: 4rem;
     flex: 1 1 auto; }
-  .sobreMi .sobreMi__content {
+  .sobreMi__content {
     font-size: 1.8em;
     text-align: center;
     line-height: 2;
-    border-radius: 2rem;
+    border-radius: 4rem;
     margin: 0 5rem;
     padding: 2.4rem;
     background-color: #77A6B6;
     box-shadow: 10px 2px 15px #1e3157;
     flex: 1 1 auto; }
-    .sobreMi .sobreMi__content .page_title {
-      text-align: center;
-      font-size: 2em;
-      padding-bottom: 2.4rem;
-      font-family: "Caveat", cursive;
-      font-weight: bold; }
 
 /* Automotores */
 /* ESTILO COBERTURAS - CON GRID - */
-.page_title {
-  text-align: center;
-  font-size: 4em;
-  padding-bottom: 2.4rem;
-  font-family: "Caveat", cursive;
-  font-weight: bold; }
-
 .automotores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -228,36 +237,42 @@ li {
   grid-template-areas: "a a b" "d c c" "e e f";
   gap: 1rem;
   margin: 5rem;
-  color: white; }
-  .automotores h3 {
+  color: snow; }
+  .automotores h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 2.4rem; }
-  .automotores .automotores__content--d3 {
+  .automotores__content--d {
+    background-color: #287c35ae;
+    grid-area: b;
+    border-style: inset;
+    border-color: #87ed9f;
+    border-radius: 2.4rem; }
+  .automotores__content--d3 {
     background-color: #287c35ae;
     grid-area: a;
     border-style: inset;
     border-color: #87ed9f;
     border-radius: 2.4rem; }
-  .automotores .automotores__content--c7 {
+  .automotores__content--c7 {
     background-color: #d48735c0;
     grid-area: c;
     border-style: inset;
     border-color: #efbb72;
     border-radius: 2.4rem; }
-  .automotores .automotores__content--c2 {
+  .automotores__content--c2 {
     background-color: #d48735c0;
     grid-area: d;
     border-style: inset;
     border-color: #efbb72;
     border-radius: 2.4rem; }
-  .automotores .automotores__content--c {
+  .automotores__content--c {
     background-color: #d48735c0;
     grid-area: e;
     border-style: inset;
     border-color: #efbb72;
     border-radius: 2.4rem; }
-  .automotores .automotores__content--b1 {
+  .automotores__content--b1 {
     background-color: #2e3ba192;
     grid-area: f;
     border-style: inset;
@@ -270,33 +285,29 @@ li {
 
 /* Praxis */
 /* Style praxis.html */
-.page_title {
+.praxis {
   text-align: center;
-  font-size: 4em;
-  padding-bottom: 2.4rem;
-  font-family: "Caveat", cursive;
-  font-weight: bold; }
+  padding: 0 10rem; }
+  .praxis .praxis__art {
+    margin: 5rem 0; }
+  .praxis h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 2.4rem; }
 
 /* Cotizacion */
 /* ESTILO FORMULARIO COTIZACION */
-.page_title {
-  text-align: center;
-  font-size: 4em;
-  padding-bottom: 2.4rem;
-  font-family: "Caveat", cursive;
-  font-weight: bold; }
-
 .cotizacion {
   background-image: url(../img/undraw_personal_info_re_ur1n.svg);
   background-repeat: no-repeat;
   background-position: right;
-  margin-right: 8%;
+  padding: 0 2.4rem;
   margin-bottom: 5%; }
-  .cotizacion .cotizacion__form {
+  .cotizacion__form {
     text-align: center;
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 65%;
+    margin-left: 10%;
+    margin-right: 60%;
     border-style: groove;
     border-color: #0bf0fc;
     border-width: .5rem;
@@ -306,20 +317,21 @@ li {
     background-size: cover;
     line-height: 1.5;
     box-shadow: -15px 5px 10px #465044; }
-    .cotizacion .cotizacion__form .labels {
+    .cotizacion__form .labels, .cotizacion__form .labels__pago {
       text-decoration: underline;
       font-weight: bold;
-      font-size: 1.4em; }
-    .cotizacion .cotizacion__form .labels__pago {
-      font-size: 1em; }
-    .cotizacion .cotizacion__form .inputs {
+      font-size: 1.4em;
+      /* SE APLICA EXTEND PARA TRAER EL ESTILO DE .labels */ }
+      .cotizacion__form .labels__pago {
+        font-size: 1em; }
+    .cotizacion__form .inputs {
       width: 60%;
       height: 2.5rem; }
-      .cotizacion .cotizacion__form .inputs .inputs:focus {
+      .cotizacion__form .inputs .inputs:focus {
         outline-color: #df8d4e;
         outline-width: 3px;
         outline-style: inset; }
-    .cotizacion .cotizacion__form ::placeholder {
+    .cotizacion__form ::placeholder {
       text-align: center; }
 
 /* ESTILO BOTON COTIZACION */
@@ -337,13 +349,6 @@ li {
 
 /* Contacto */
 /* Style contacto.html */
-.page_title {
-  text-align: center;
-  font-size: 4em;
-  padding-bottom: 2.4rem;
-  font-family: "Caveat", cursive;
-  font-weight: bold; }
-
 .contact {
   font-family: "Zilla Slab", serif;
   background-image: url(../img/undraw_contact_us_re_4qqt.svg);
@@ -351,23 +356,26 @@ li {
   background-position: right;
   background-size: 50vw;
   margin: 10rem; }
-  .contact .contact__link {
+  .contact__link {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 1.4em;
     display: inline-block;
     margin-top: 6rem;
-    margin-left: 1rem; }
-    .contact .contact__link .contact__link:hover {
-      background-color: #e9f9f1;
-      border: inset #0bf0fc 0.2rem;
-      border-radius: 40%; }
-  .contact .contact__icon {
+    margin-left: 1rem;
+    transition: all .5s; }
+  .contact__link:hover {
+    background-color: #e9f9f1;
+    border: inset #0bf0fc 0.2rem;
+    border-radius: 1rem; }
+  .contact__icon {
     width: 4.5rem; }
 
 /* Footer */
-.footer {
+.footer, .footer .footer__redes {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 0;
   width: 100%;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1em;
@@ -377,14 +385,33 @@ li {
     text-align: center; }
   .footer .footer__redes {
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
     justify-content: center;
+    align-items: center;
+    gap: 3rem;
     width: 30%; }
 
 /* @mediaquerys */
+/* MEDIAQUERY PARA 970PX - formulario cotizacion */
+@media only screen and (max-width: 970px) {
+  .navbar {
+    margin: 2.4rem;
+    margin-bottom: 0; }
+  .cotizacion {
+    background-image: none;
+    margin: auto; }
+    .cotizacion .page_title {
+      font-size: 4em;
+      padding: 2rem; }
+    .cotizacion .cotizacion__form {
+      width: 60%;
+      margin: 0 auto;
+      border-style: groove; } }
+
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
 @media only screen and (max-width: 770px) {
+  .navbar {
+    margin: 2.4rem;
+    margin-bottom: 0; }
   .ingresar {
     font-size: 1em;
     margin-top: 9rem; }
@@ -417,7 +444,7 @@ li {
       border-radius: 5%;
       flex: 1 1 auto; }
     .sobreMi .sobreMi__content {
-      font-size: 1em;
+      font-size: 1.4em;
       line-height: 1;
       border-radius: 2rem;
       margin: 1rem 5rem; }
@@ -453,11 +480,11 @@ li {
   .cotizacion {
     background-image: none;
     margin: auto; }
-    .cotizacion .cotizacion__title {
+    .cotizacion .page_title {
       font-size: 2em;
       padding: 3rem; }
     .cotizacion .cotizacion__form {
-      margin: 2rem 8rem;
+      margin: 0 auto;
       border-style: groove; }
   #enviar {
     border-radius: 2rem;
@@ -477,8 +504,8 @@ li {
     .contact .contact__icon {
       width: 2.5rem; }
   /* @media para footer */
-  .footer {
-    flex-direction: column;
+  .footer, .footer .footer__redes {
+    flex-direction: row;
     font-size: var(--text-xsmall);
     grid-area: c; }
     .footer .footer__texto {
@@ -506,4 +533,12 @@ li {
   .contact .contact__icon {
     width: 1.5rem; }
   .contact .contact__title {
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+  .cotizacion {
+    background-image: none; }
+    .cotizacion .page_title {
+      font-size: 1.4em;
+      padding: 1rem; }
+    .cotizacion .cotizacion__form {
+      margin: 0 auto;
+      border-style: groove; } }

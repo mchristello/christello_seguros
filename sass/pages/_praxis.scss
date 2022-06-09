@@ -1,10 +1,15 @@
 
 /* Style praxis.html */
 
-.page_title {
+.praxis {
     text-align: center;
-    font-size: $text-large;
-    padding-bottom: $spacing-xsmall;
-    font-family: $font-alternative;
-    font-weight: bold;
+    padding: 0 $spacing-medium;
+    & .praxis__art {
+        margin: $spacing-small 0;
+    }
+    & h2 {
+        font-size: map-get($font-sizes, text-medium);
+        text-decoration: underline;
+        margin-bottom: $spacing-xsmall;
+    }
 }

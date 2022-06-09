@@ -1,19 +1,22 @@
 .footer {
-    display: flex;
-    align-items: center;
+    @include flex(row, center, center, 0);
+    // display: flex;
+    // align-items: center;
     width: 100%;
     font-family: $font-secondary;
-    font-size: $text-xsmall;
+    font-size: map-get($font-sizes, text-xsmall);
     background: linear-gradient(140deg, #dfb595, #e9f9f1);
     & .footer__texto {
         width: 70%;
         text-align: center;
     }
     & .footer__redes {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        justify-content: center;
+        @extend .footer;
+        @include flex(row, center, center, 3rem);
+        // display: flex;
+        // flex-direction: row;
+        // gap: 3rem;
+        // justify-content: center;
         width: 30%;
     }
 }

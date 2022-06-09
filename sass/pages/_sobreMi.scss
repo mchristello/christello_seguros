@@ -12,28 +12,19 @@
         width: 35vw;
         filter: drop-shadow(16px 16px 10px black);
         border-style: groove;
-        border-radius: 5%;
+        border-radius: 4rem;
         flex: 1 1 auto;
     }
     
-    & .sobreMi__content {
-        & .page_title {
-            text-align: center;
-            font-size: $text-medium;
-            padding-bottom: $spacing-xsmall;
-            font-family: $font-alternative;
-            font-weight: bold;
-        }
-
-        font-size: $text-intermidiate;
+    &__content {
+        font-size: map-get($font-sizes, text-intermidiate);
         text-align: center;
         line-height: 2; 
-        border-radius: 2rem;
+        border-radius: 4rem;
         margin: 0 $spacing-small;
         padding: $spacing-xsmall;
         background-color: #77A6B6;    
         box-shadow: 10px 2px 15px rgb(30, 49, 87); 
         flex: 1 1 auto;
-    }
-    
+    }    
 }

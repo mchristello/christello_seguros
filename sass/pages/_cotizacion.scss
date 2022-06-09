@@ -1,25 +1,17 @@
 
 /* ESTILO FORMULARIO COTIZACION */
 
-.page_title {
-    text-align: center;
-    font-size: $text-large;
-    padding-bottom: $spacing-xsmall;
-    font-family: $font-alternative;
-    font-weight: bold;
-}
-
 .cotizacion {
     background-image: url(../img/undraw_personal_info_re_ur1n.svg);
     background-repeat: no-repeat;
     background-position: right;
-    margin-right: 8%;
+    padding: 0 $spacing-xsmall;
     margin-bottom: 5%;
-    & .cotizacion__form {
+    &__form {
         text-align: center;
         margin-top: 5%;
-        margin-left: 5%;
-        margin-right: 65%;
+        margin-left: 10%;
+        margin-right: 60%;
         border-style: groove;
         border-color: $details;
         border-width: .5rem;
@@ -29,28 +21,31 @@
         background-size: cover;
         line-height: 1.5;
         box-shadow: -15px 5px 10px rgb(70, 80, 68);
-        & .labels {
+        .labels {
             text-decoration: underline;
             font-weight: bold;
-            font-size: $text-small;
+            font-size: map-get($font-sizes, text-small);
+
+            /* SE APLICA EXTEND PARA TRAER EL ESTILO DE .labels */
+            
+            &__pago {
+                @extend .labels;
+                font-size: map-get($font-sizes, text-xsmall);
+            }
         }
-        & .labels__pago {
-            font-size: $text-xsmall;
-        }
-        & .inputs {
+        .inputs {
             width: 60%;
             height: 2.5rem;
             & .inputs:focus {
                 outline-color: $secondary;
                 outline-width: 3px;
-                outline-style:inset;
+                outline-style: inset;
             }
         }
-        & ::placeholder {
+        ::placeholder {
             text-align: center;
         }
     }
-    
 }
 
 /* ESTILO BOTON COTIZACION */
@@ -62,7 +57,7 @@
     margin-bottom: 2rem;
     background-color: $base;
     cursor: pointer;
-    font-size: $text-small;    
+    font-size: map-get($font-sizes, text-small);    
     transition: background-color 0.5s;
     &:hover {
         background-color: $secondary;

@@ -31,11 +31,12 @@
     box-shadow: 5px 15px 25px rgb(74, 71, 71);
     margin: $spacing-xsmall;
     margin-bottom: $spacing-medium;
+    z-index: 1;
     & button {
         margin-right: 5rem;
     }
     & ul {
-        font-size: $text-small;
+        font-size: map-get($font-sizes, text-small);
         border-radius: 4rem;
     }
     & li {
@@ -93,12 +94,11 @@ ul {
     & ul {
         position: absolute;
         display: none;
-        background: linear-gradient(45deg, #6abea2, #e1dade);
         border-radius: 2.5rem;
         border-style: ridge;
         width: auto;
         transition: all .5s;
-        & ul li {
+        li {
             display: block;
             white-space: nowrap;
             line-height: 4rem;

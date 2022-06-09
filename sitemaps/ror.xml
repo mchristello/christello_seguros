@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://mchristello.github.io/seguros_christello/</title>
+  <link>https://mchristello.github.io/seguros_christello/</link>
+
+<item>
+     <link>https://mchristello.github.io/seguros_christello/</link>
+     <title>Matias Christello</title>
+     <description>Matias Christello</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/main.html</link>
+     <title>Home</title>
+     <description>Home</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/index.html</link>
+     <title>Matias Christello</title>
+     <description>Matias Christello</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/sobreMi.html</link>
+     <title>Sobre Mi</title>
+     <description>Sobre Mi</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/automotores.html</link>
+     <title>Coberturas</title>
+     <description>Coberturas</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/praxis.html</link>
+     <title>Coberturas</title>
+     <description>Coberturas</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/cotizacion.html</link>
+     <title>Cotizacion</title>
+     <description>Cotizacion</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mchristello.github.io/seguros_christello/pages/contacto.html</link>
+     <title>Contacto</title>
+     <description>Contacto</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

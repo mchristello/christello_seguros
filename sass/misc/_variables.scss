@@ -16,11 +16,20 @@
     $font-principal: 'Zilla Slab', serif;
     $font-secondary: 'Montserrat Alternates', sans-serif;
     $font-alternative: 'Caveat', cursive;
-
+    
     // Font-Sizes
-    $text-large: 4em;
-    $text-medium: 2em;
-    $text-intermidiate: 1.8em;
-    $text-small: 1.4em;
-    $text-xsmall: 1em;
 
+/* se uso .text-intermidiate como class en el titulo de la página sobreMi.html */
+    $font-sizes: (
+        text-large: 4em,
+        text-medium: 2em,
+        text-intermidiate: 1.8em, 
+        text-small: 1.4em,
+        text-xsmall: 1em
+    );
+
+    @each $font-size, $value in $font-sizes {
+        .#{$font-size} {
+            font-size: #{$value};
+        }
+    }
