@@ -359,6 +359,7 @@ li {
   .contact__link {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 1.4em;
+    color: #0f0c68 !important;
     display: inline-block;
     margin-top: 6rem;
     margin-left: 1rem;

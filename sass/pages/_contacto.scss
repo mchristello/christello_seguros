@@ -12,6 +12,7 @@
     &__link {
         font-family: $font-secondary;
         font-size: map-get($font-sizes, text-small);
+        color: $text-color !important;
         display: inline-block;
         margin-top: 6rem;
         margin-left: 1rem;
