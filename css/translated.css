@@ -441,7 +441,7 @@ li {
     .sobreMi h2 {
       font-size: 1.4em; }
     .sobreMi img {
-      width: 50vw;
+      width: 75vw;
       margin-top: .5rem;
       filter: drop-shadow(16px 16px 10px black);
       border-style: groove;
