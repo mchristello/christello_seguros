@@ -36,11 +36,11 @@
         .inputs {
             width: 60%;
             height: 2.5rem;
-            & .inputs:focus {
-                outline-color: $secondary;
-                outline-width: 3px;
-                outline-style: inset;
-            }
+        }
+        .inputs:focus {
+            outline-color: $secondary;
+            outline-width: 3px;
+            outline-style: inset;
         }
         ::placeholder {
             text-align: center;

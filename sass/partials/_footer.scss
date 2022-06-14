@@ -11,7 +11,6 @@
         text-align: center;
     }
     & .footer__redes {
-        @extend .footer;
         @include flex(row, center, center, 3rem);
         // display: flex;
         // flex-direction: row;

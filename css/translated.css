@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
 /* Variables */
-/* se uso .text-intermidiate como class en el titulo de la página sobreMi.html */
 .text-large {
   font-size: 4em; }
 
@@ -236,7 +235,7 @@ li {
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "a a b" "d c c" "e e f";
   gap: 1rem;
-  margin: 5rem;
+  margin: 0 auto;
   color: snow; }
   .automotores h2 {
     text-align: center;
@@ -327,10 +326,10 @@ li {
     .cotizacion__form .inputs {
       width: 60%;
       height: 2.5rem; }
-      .cotizacion__form .inputs .inputs:focus {
-        outline-color: #df8d4e;
-        outline-width: 3px;
-        outline-style: inset; }
+    .cotizacion__form .inputs:focus {
+      outline-color: #df8d4e;
+      outline-width: 3px;
+      outline-style: inset; }
     .cotizacion__form ::placeholder {
       text-align: center; }
 
@@ -371,7 +370,7 @@ li {
     width: 4.5rem; }
 
 /* Footer */
-.footer, .footer .footer__redes {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +402,7 @@ li {
       font-size: 4em;
       padding: 2rem; }
     .cotizacion .cotizacion__form {
-      width: 60%;
+      width: 75%;
       margin: 0 auto;
       border-style: groove; } }
 
@@ -424,6 +423,8 @@ li {
       flex-wrap: wrap;
       align-items: center;
       justify-content: center; }
+      .main .main--flex img {
+        margin-top: 5rem; }
     .main div {
       margin: 2rem 3rem; }
     .main p {
@@ -439,15 +440,16 @@ li {
       font-size: 1.4em; }
     .sobreMi img {
       width: 50vw;
+      margin-top: .5rem;
       filter: drop-shadow(16px 16px 10px black);
       border-style: groove;
       border-radius: 5%;
       flex: 1 1 auto; }
     .sobreMi .sobreMi__content {
       font-size: 1.4em;
-      line-height: 1;
+      line-height: 1.5;
       border-radius: 2rem;
-      margin: 1rem 5rem; }
+      margin: 0 auto; }
   /* @media para automotores */
   .automotores {
     font-size: 1em;
@@ -476,10 +478,22 @@ li {
     .automotores .automotores__content--b1 {
       grid-column: 1/5;
       grid-row: 6/7; }
+  /* @media para praxis */
+  .praxis {
+    padding: 0 5rem; }
+    .praxis .page_title {
+      font-size: 2em;
+      margin-top: 5rem; }
+    .praxis .praxis__art {
+      margin: 0 auto; }
+    .praxis h2 {
+      font-size: 1.4em;
+      text-decoration: underline;
+      margin-bottom: 2.4rem; }
   /* @media para cotizacion */
   .cotizacion {
     background-image: none;
-    margin: auto; }
+    margin: 0 auto; }
     .cotizacion .page_title {
       font-size: 2em;
       padding: 3rem; }
@@ -504,9 +518,9 @@ li {
     .contact .contact__icon {
       width: 2.5rem; }
   /* @media para footer */
-  .footer, .footer .footer__redes {
-    flex-direction: row;
-    font-size: var(--text-xsmall);
+  .footer {
+    flex-direction: column-reverse;
+    font-size: 1em;
     grid-area: c; }
     .footer .footer__texto {
       text-align: center; } }
@@ -522,18 +536,8 @@ li {
     width: 80vw; }
   .main p {
     font-size: 1em; }
-  .contact {
-    background-size: 100%;
-    margin: 0 2.4rem;
-    padding: 5rem 0; }
-  .contact .contact__link {
-    font-size: 1em;
-    margin-top: 4rem;
-    margin-left: 1rem; }
-  .contact .contact__icon {
-    width: 1.5rem; }
-  .contact .contact__title {
-    font-size: 1.4em; }
+  .praxis {
+    padding: 0 2.4rem; }
   .cotizacion {
     background-image: none; }
     .cotizacion .page_title {
@@ -541,4 +545,18 @@ li {
       padding: 1rem; }
     .cotizacion .cotizacion__form {
       margin: 0 auto;
-      border-style: groove; } }
+      border-style: groove; }
+      .cotizacion .cotizacion__form textarea {
+        width: 80%; }
+  .contact {
+    background-size: 100%;
+    margin: 0 2.4rem;
+    padding: 5rem 0; }
+    .contact .contact__link {
+      font-size: 1em;
+      margin-top: 4rem;
+      margin-left: 1rem; }
+    .contact.contact__icon {
+      width: 1.5rem; }
+  .contact .page_title {
+    font-size: 2em; } }
