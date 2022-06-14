@@ -363,7 +363,7 @@ li {
     display: inline-block;
     margin-top: 6rem;
     margin-left: 1rem;
-    transition: all .5s; }
+    transition: all .6s; }
   .contact__link:hover {
     background-color: #e9f9f1;
     border: inset #0bf0fc 0.2rem;
