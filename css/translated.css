@@ -43,7 +43,8 @@ body {
   font-size: 4em;
   padding-bottom: 2.4rem;
   font-family: "Caveat", cursive;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: underline; }
 
 /* Header */
 #sublogo {
@@ -544,8 +545,7 @@ li {
       font-size: 1.4em;
       padding: 1rem; }
     .cotizacion .cotizacion__form {
-      margin: 0 auto;
-      border-style: groove; }
+      width: 90%; }
       .cotizacion .cotizacion__form textarea {
         width: 80%; }
   .contact {
