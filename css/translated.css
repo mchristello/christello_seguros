@@ -245,37 +245,37 @@ li {
   .automotores__content--d {
     background-color: #287c35ae;
     grid-area: b;
-    border-style: inset;
+    border-style: groove;
     border-color: #87ed9f;
     border-radius: 2.4rem; }
   .automotores__content--d3 {
     background-color: #287c35ae;
     grid-area: a;
-    border-style: inset;
+    border-style: groove;
     border-color: #87ed9f;
     border-radius: 2.4rem; }
   .automotores__content--c7 {
-    background-color: #d48735c0;
+    background-color: #972c0c7e;
     grid-area: c;
-    border-style: inset;
-    border-color: #efbb72;
+    border-style: groove;
+    border-color: #cd3305d0;
     border-radius: 2.4rem; }
   .automotores__content--c2 {
-    background-color: #d48735c0;
+    background-color: #972c0c7e;
     grid-area: d;
-    border-style: inset;
-    border-color: #efbb72;
+    border-style: groove;
+    border-color: #cd3305d0;
     border-radius: 2.4rem; }
   .automotores__content--c {
-    background-color: #d48735c0;
+    background-color: #972c0c7e;
     grid-area: e;
-    border-style: inset;
-    border-color: #efbb72;
+    border-style: groove;
+    border-color: #cd3305d0;
     border-radius: 2.4rem; }
   .automotores__content--b1 {
     background-color: #2e3ba192;
     grid-area: f;
-    border-style: inset;
+    border-style: groove;
     border-color: #7171f0;
     border-radius: 2.4rem; }
   .automotores p {
@@ -287,13 +287,13 @@ li {
 /* Style praxis.html */
 .praxis {
   text-align: center;
-  padding: 0 10rem; }
+  padding: 2.4rem 10rem; }
   .praxis .praxis__art {
-    margin: 5rem 0; }
+    margin: 0 auto; }
   .praxis h2 {
     font-size: 2em;
     text-decoration: underline;
-    margin-bottom: 2.4rem; }
+    margin: 2.4rem 0; }
 
 /* Cotizacion */
 /* ESTILO FORMULARIO COTIZACION */

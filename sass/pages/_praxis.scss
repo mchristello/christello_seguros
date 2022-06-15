@@ -3,13 +3,13 @@
 
 .praxis {
     text-align: center;
-    padding: 0 $spacing-medium;
+    padding: $spacing-xsmall $spacing-medium;
     & .praxis__art {
-        margin: $spacing-small 0;
+        margin: 0 auto;
     }
     & h2 {
         font-size: map-get($font-sizes, text-medium);
         text-decoration: underline;
-        margin-bottom: $spacing-xsmall;
+        margin: $spacing-xsmall 0;
     }
 }
