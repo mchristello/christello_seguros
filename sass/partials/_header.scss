@@ -59,7 +59,7 @@
 .dropdown-item {
     color: $text-color;
     transition: all .3s;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     &:hover {
         background-color: $secondary;
         border-radius: 7rem;
@@ -87,10 +87,7 @@
 
 ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex(row, flex-end, center, 5px);
     & ul {
         position: absolute;
         display: none;
