@@ -297,6 +297,24 @@ li {
     text-decoration: underline;
     margin: 2.4rem 0; }
 
+/* Hogar */
+.hogar__info {
+  font-size: 1.8em;
+  text-align: center;
+  height: 40vh; }
+
+/* Comercio */
+.comercio__info {
+  font-size: 1.8em;
+  text-align: center;
+  height: 40vh; }
+
+/* Accidentes Personales */
+.ap__info {
+  font-size: 1.8em;
+  text-align: center;
+  height: 40vh; }
+
 /* Cotizacion */
 /* ESTILO FORMULARIO COTIZACION */
 .cotizacion {
