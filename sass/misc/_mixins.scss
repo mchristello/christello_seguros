@@ -4,3 +4,9 @@
     align-items: $align;
     gap: $gap;
 }
+
+@mixin destacado($color, $font-style, $font-weight) {
+    color: $color;
+    font-style: $font-style;
+    font-weight: $font-weight;
+}

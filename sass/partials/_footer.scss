@@ -1,21 +1,17 @@
 .footer {
     @include flex(row, center, center, 0);
-    // display: flex;
-    // align-items: center;
     width: 100%;
+    min-height: 150px;
     font-family: $font-secondary;
     font-size: map-get($font-sizes, text-xsmall);
-    background: linear-gradient(180deg, #df8d4e, #e9f9f1);
+    background: linear-gradient(360deg, #db70819c, #df8d4e00);
+    clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 100%);
     & .footer__texto {
         width: 70%;
         text-align: center;
     }
     & .footer__redes {
         @include flex(row, center, center, 3rem);
-        // display: flex;
-        // flex-direction: row;
-        // gap: 3rem;
-        // justify-content: center;
         width: 30%;
     }
 }

@@ -30,3 +30,7 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.destacado {
+    @include destacado(rgb(61, 59, 59), italic, bold);
+}

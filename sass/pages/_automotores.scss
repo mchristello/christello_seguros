@@ -10,12 +10,13 @@
         "d c c"
         "e e f";
     gap: 1rem;
-    margin: 0 auto;
-    color: snow;
+    margin: 0 auto;    
+    color: #dadada;
     & h2 {
         text-align: center;
         font-size: map-get($font-sizes, text-medium);
         margin-bottom: $spacing-xsmall;
+        font-weight: bold;
     }
     &__content--d {
         background-color: #287c35ae;

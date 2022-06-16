@@ -46,6 +46,11 @@ body {
   font-weight: bold;
   text-decoration: underline; }
 
+.destacado {
+  color: #3d3b3b;
+  font-style: italic;
+  font-weight: bold; }
+
 /* Header */
 #sublogo {
   border-radius: 50%;
@@ -239,11 +244,12 @@ li {
   grid-template-areas: "a a b" "d c c" "e e f";
   gap: 1rem;
   margin: 0 auto;
-  color: snow; }
+  color: #dadada; }
   .automotores h2 {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 2.4rem; }
+    margin-bottom: 2.4rem;
+    font-weight: bold; }
   .automotores__content--d {
     background-color: #287c35ae;
     grid-area: b;
@@ -294,8 +300,11 @@ li {
     margin: 0 auto; }
   .praxis h2 {
     font-size: 2em;
+    font-family: "Caveat", cursive;
     text-decoration: underline;
     margin: 2.4rem 0; }
+  .praxis p {
+    font-size: 1.4em; }
 
 /* Hogar */
 .hogar__info {
@@ -399,9 +408,11 @@ li {
   align-items: center;
   gap: 0;
   width: 100%;
+  min-height: 150px;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1em;
-  background: linear-gradient(180deg, #df8d4e, #e9f9f1); }
+  background: linear-gradient(360deg, #db70819c, #df8d4e00);
+  clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 100%); }
   .footer .footer__texto {
     width: 70%;
     text-align: center; }

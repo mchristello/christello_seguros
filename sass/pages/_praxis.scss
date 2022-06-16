@@ -9,7 +9,11 @@
     }
     & h2 {
         font-size: map-get($font-sizes, text-medium);
+        font-family: $font-alternative;
         text-decoration: underline;
         margin: $spacing-xsmall 0;
+    }
+    & p{        
+        font-size: map-get($font-sizes, text-small);
     }
 }
