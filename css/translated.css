@@ -375,7 +375,7 @@ li {
   font-weight: bold;
   transition: background-color 0.5s; }
   #enviar:hover {
-    background-color: #df8d4e; }
+    background-color: lightgreen; }
 
 /* Contacto */
 /* Style contacto.html */
@@ -386,6 +386,15 @@ li {
   background-position: right;
   background-size: 50vw;
   margin: 10rem; }
+  .contact__conteiner {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 5rem; }
   .contact__link {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 1.4em;
@@ -473,7 +482,11 @@ li {
     font-size: 1em;
     display: grid;
     justify-items: center;
-    padding: 0; }
+    padding: 0;
+    margin: 0 auto; }
+    .sobreMi__content {
+      width: 85vw;
+      margin: 0 auto; }
     .sobreMi h2 {
       font-size: 1.4em; }
     .sobreMi img {
@@ -519,7 +532,7 @@ li {
     .praxis .praxis__art {
       margin: 0 auto; }
     .praxis h2 {
-      font-size: 1.4em;
+      font-size: 2em;
       text-decoration: underline;
       margin-bottom: 2.4rem; }
   /* @media para cotizacion */
@@ -542,6 +555,9 @@ li {
     background-size: 100%;
     margin: 0 5rem;
     padding: 10rem 0; }
+    .contact__conteiner {
+      margin: 0 auto;
+      padding: 1.4rem; }
     .contact .contact__link {
       font-size: 1.4em;
       display: inline-block;

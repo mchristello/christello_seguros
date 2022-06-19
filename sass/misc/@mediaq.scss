@@ -75,6 +75,12 @@
         display: grid;
         justify-items: center;
         padding: 0;
+        margin: 0 auto;
+
+        &__content {
+            width: 85vw;
+            margin: 0 auto;
+        }
 
         & h2 {
             font-size: map-get($font-sizes, text-small);
@@ -140,7 +146,7 @@
             margin: 0 auto;
         }
         & h2 {
-            font-size: map-get($font-sizes, text-small);
+            font-size: map-get($font-sizes, text-medium);
             text-decoration: underline;
             margin-bottom: $spacing-xsmall;
         }
@@ -174,6 +180,10 @@
         background-size: 100%;
         margin: 0 $spacing-small;
         padding: $spacing-medium 0;
+        &__conteiner {
+            margin: 0 auto;
+            padding: 1.4rem;
+        }
         & .contact__link {
             font-size: map-get($font-sizes, text-small);
             display: inline-block;
