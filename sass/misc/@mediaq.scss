@@ -1,4 +1,4 @@
-/* MEDIAQUERY PARA 970PX - formulario cotizacion */
+/* MEDIAQUERY PARA 970PX */
 
 @media only screen and (max-width: 970px) {
     
@@ -13,19 +13,38 @@
         border-radius: 2rem;
     }
 
-.cotizacion {
-    background-image: none;
-    margin: auto;
-        & .page_title {
-            font-size: map-get($font-sizes, text-large);
-            padding: 2rem;
-        }
-        & .cotizacion__form {
-            width: 75%;
+    .cotizacion {
+        margin: 0 auto;    
+        @include flex(column-reverse, center, center, 5rem);
+            & .page_title {
+                font-size: map-get($font-sizes, text-large);
+                padding: 2rem;
+            }
+            & .cotizacion__form {
+                width: 75%;
+                margin: 0 auto;
+                border-style: groove;
+            }
+    }
+
+    .contact {
+        @include flex(column-reverse, center, center, 4rem);
+        margin: 0 $spacing-small;
+        padding: $spacing-medium 0;
+        &__conteiner {
             margin: 0 auto;
-            border-style: groove;
+            padding: 1.4rem;
+        }
+        & .contact__link {
+            font-size: map-get($font-sizes, text-xsmall);
+            display: inline-block;
+            margin: 2rem .5rem;
+        }
+        & .contact__icon {
+            width: 2.5rem;
         }
     }
+
 }
 
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
@@ -71,7 +90,6 @@
     /* @media para sobrEMi */
 
     .sobreMi {
-        font-size:map-get($font-sizes, text-xsmall);
         display: grid;
         justify-items: center;
         padding: 0;
@@ -87,7 +105,7 @@
         }
 
         & img {
-            width: 75vw;
+            width: 85vw;
             margin-top: .5rem;
             filter: drop-shadow(16px 16px 10px black);
             border-style: groove;
@@ -103,7 +121,7 @@
         grid-template-rows: repeat(6, 1fr);
         row-gap: $spacing-xsmall;
         & h2 {
-            font-size: map-get($font-sizes, text-medium);
+            font-size: map-get($font-sizes, text-small);
         }
         & .automotores__content--d {
             grid-column: 1/5;
@@ -130,7 +148,7 @@
             grid-row: 6/7;
         }
         & p {
-            font-size: map-get($font-sizes, text-small);
+            font-size: map-get($font-sizes, text-xsmall);
         }
     }
 
@@ -155,7 +173,6 @@
     /* @media para cotizacion */
 
     .cotizacion {
-        background-image: none;
         margin: 0 auto;
         & .page_title {
             font-size: map-get($font-sizes, text-medium);
@@ -164,6 +181,9 @@
         & .cotizacion__form {
             margin: 0 auto;
             border-style: groove;
+        }
+        & img {
+            display: none;
         }
     }
 
@@ -177,30 +197,32 @@
     /* @media para contacto */
 
     .contact {
-        background-size: 100%;
         margin: 0 $spacing-small;
         padding: $spacing-medium 0;
         &__conteiner {
+            width: max-content;
             margin: 0 auto;
             padding: 1.4rem;
         }
         & .contact__link {
-            font-size: map-get($font-sizes, text-small);
+            font-size: map-get($font-sizes, text-xsmall);
             display: inline-block;
-            margin-top: 4rem;
-            margin-left: 1rem;
+            margin: 2rem .5rem;
         }
         & .contact__icon {
             width: 2.5rem;
+        }
+        &__img {
+            width: 70vw;
         }
     }
 
         /* @media para footer */
     
         .footer {
+            height: 25vh;
             flex-direction: column-reverse;
             font-size: map-get($font-sizes, text-xsmall);
-            grid-area: c;
             & .footer__texto {
                 text-align: center;
             }
@@ -250,7 +272,6 @@
     }
 
     .contact {
-        background-size: 100%;
         margin: 0 $spacing-xsmall;
         padding: $spacing-small 0;
         & .contact__link {
@@ -260,7 +281,9 @@
         }
         &.contact__icon {
             width: 1.5rem;
-        }   
+        }
+        &__img {
+        }
     }
     .contact .page_title {
         font-size: map-get($font-sizes, text-medium);

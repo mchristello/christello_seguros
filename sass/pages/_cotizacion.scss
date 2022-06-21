@@ -2,16 +2,13 @@
 /* ESTILO FORMULARIO COTIZACION */
 
 .cotizacion {
-    background-image: url(../img/undraw_personal_info_re_ur1n.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 0 $spacing-xsmall;
-    margin-bottom: 5%;
+    margin-bottom: $spacing-small;
+    padding: $spacing-xsmall;
+    @include flex(row, center, center, 4rem);
     &__form {
+        width: 30vw;
         text-align: center;
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 60%;
+        margin-left: $spacing-small;
         border-style: groove;
         border-color: $details;
         border-width: .5rem;
@@ -34,7 +31,7 @@
             }
         }
         .inputs {
-            width: 60%;
+            width: 70%;
             height: 2.5rem;
         }
         .inputs:focus {
@@ -45,6 +42,10 @@
         ::placeholder {
             text-align: center;
         }
+    }
+    &__img {
+        width: 50vw;
+        margin-right: $spacing-small;
     }
 }
 

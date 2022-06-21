@@ -15,11 +15,16 @@
         border-radius: 4rem;
         flex: 1 1 auto;
     }
+
+    & h1 {
+        margin-bottom: 2rem;
+    }
     
     &__content {
+        @include flex(column, center, center, 0);
         font-size: map-get($font-sizes, text-intermidiate);
         text-align: center;
-        line-height: 2; 
+        line-height: 1.5; 
         border-radius: 4rem;
         margin: 0 $spacing-small;
         padding: $spacing-xsmall;

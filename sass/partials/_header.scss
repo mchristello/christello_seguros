@@ -5,20 +5,6 @@
     border-color: $details;
 }
 
-/* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
-
-/* #nav-bar {
-    background: linear-gradient(90deg, #27744F, #e1dade);
-    border-radius: 4em;
-    border-style: outset;
-    border-color: var(--details);
-    display: flex;
-    flex-direction: row;
-    box-shadow: 5px 15px 25px rgb(74, 71, 71);
-    margin: var(--spacing-xsmall);
-    margin-bottom: var(--spacing-medium);
-} */
-
 /* Style navbar de Bootstrap */
 
 .navbar {
@@ -38,7 +24,7 @@
         margin-right: 5rem;
     }
     & ul {
-        font-size: map-get($font-sizes, text-small);
+        font-size: map-get($font-sizes, text-xsmall);
         border-radius: 4rem;
     }
     & li {

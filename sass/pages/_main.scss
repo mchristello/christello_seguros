@@ -4,14 +4,12 @@
     margin: 0 $spacing-medium;
     margin-bottom: $spacing-small;
     line-height: 1.5;
-    font-family: $font-principal;
+    font-family: $font-roboto;
     color: $text-color;
     text-align: center;
 
     &--flex {
         @include flex(row, center, center, 0);
-        /* display: flex;
-        flex-direction: row; */
     }
 
     &--flex img {

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Marvel:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 /* Variables */
 .text-large {
   font-size: 4em; }
@@ -35,8 +36,8 @@ html {
 body {
   font-family: "Zilla Slab", serif;
   background: linear-gradient(1deg, #df8d4e, #e9f9f1);
-  font-size: 1.4em;
-  color: #0f0c68; }
+  font-size: 1.8em;
+  color: #002841; }
 
 .page_title {
   text-align: center;
@@ -47,8 +48,8 @@ body {
   text-decoration: underline; }
 
 .destacado {
-  color: #3d3b3b;
-  font-style: italic;
+  color: #00043b;
+  font-style: normal;
   font-weight: bold; }
 
 /* Header */
@@ -57,18 +58,6 @@ body {
   border-right-style: inset;
   border-color: #0bf0fc; }
 
-/* ESTILO BARRA DE NAVEGACION PARA MAIN - fuera de uso */
-/* #nav-bar {
-    background: linear-gradient(90deg, #27744F, #e1dade);
-    border-radius: 4em;
-    border-style: outset;
-    border-color: var(--details);
-    display: flex;
-    flex-direction: row;
-    box-shadow: 5px 15px 25px rgb(74, 71, 71);
-    margin: var(--spacing-xsmall);
-    margin-bottom: var(--spacing-medium);
-} */
 /* Style navbar de Bootstrap */
 .navbar {
   position: sticky;
@@ -86,7 +75,7 @@ body {
   .navbar button {
     margin-right: 5rem; }
   .navbar ul {
-    font-size: 1.4em;
+    font-size: 1em;
     border-radius: 4rem; }
   .navbar li {
     margin: 0 2.4rem; }
@@ -102,7 +91,7 @@ body {
   background: linear-gradient(45deg, #6abea2, #e1dade); }
 
 .dropdown-item {
-  color: #0f0c68;
+  color: #002841;
   transition: all .3s;
   font-size: 1.4rem; }
   .dropdown-item:hover {
@@ -113,7 +102,7 @@ body {
 
 .nav-link {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #0f0c68;
+  color: #002841;
   text-decoration: none;
   transition: all .5s; }
   .nav-link:hover {
@@ -128,6 +117,7 @@ body {
 ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 5px; }
@@ -168,40 +158,21 @@ li {
   border-radius: 40%;
   box-shadow: 5px 15px 25px #4a4747; }
 
-/* Comentado por uso de bootstrap en boton de ingreso */
-/* button {    
-    font-family: var(--font-principal);
-    width: 20vw;
-    height: 5rem;
-    font-size: var(--text-medium);
-    margin-bottom: 2rem;
-    border-radius: 5rem;
-    background-color: snow;
-    transition: all .6s;
-    cursor: pointer;
-    &:hover {
-        background-color: var(--primary);
-        transform: scale(1.1, 1.1);
-        font-weight: bold;
-    }
-}
- */
 /* Main */
 .main {
   font-size: 1.4em;
   margin: 0 10rem;
   margin-bottom: 5rem;
   line-height: 1.5;
-  font-family: "Zilla Slab", serif;
-  color: #0f0c68;
+  font-family: "Roboto", sans-serif;
+  color: #002841;
   text-align: center; }
   .main--flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0;
-    /* display: flex;
-        flex-direction: row; */ }
+    gap: 0; }
   .main--flex img {
     width: 40vw;
     border-style: groove;
@@ -224,10 +195,17 @@ li {
     border-style: groove;
     border-radius: 4rem;
     flex: 1 1 auto; }
+  .sobreMi h1 {
+    margin-bottom: 2rem; }
   .sobreMi__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
     font-size: 1.8em;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     border-radius: 4rem;
     margin: 0 5rem;
     padding: 2.4rem;
@@ -244,7 +222,7 @@ li {
   grid-template-areas: "a a b" "d c c" "e e f";
   gap: 1rem;
   margin: 0 auto;
-  color: #dadada; }
+  color: #ffffff; }
   .automotores h2 {
     text-align: center;
     font-size: 2em;
@@ -255,37 +233,67 @@ li {
     grid-area: b;
     border-style: groove;
     border-color: #87ed9f;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores__content--d3 {
     background-color: #287c35ae;
     grid-area: a;
     border-style: groove;
     border-color: #87ed9f;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores__content--c7 {
     background-color: #972c0c7e;
     grid-area: c;
     border-style: groove;
     border-color: #cd3305d0;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores__content--c2 {
     background-color: #972c0c7e;
     grid-area: d;
     border-style: groove;
     border-color: #cd3305d0;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores__content--c {
     background-color: #972c0c7e;
     grid-area: e;
     border-style: groove;
     border-color: #cd3305d0;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores__content--b1 {
     background-color: #2e3ba192;
     grid-area: f;
     border-style: groove;
     border-color: #7171f0;
-    border-radius: 2.4rem; }
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
   .automotores p {
     text-align: center;
     line-height: 1.5;
@@ -327,16 +335,17 @@ li {
 /* Cotizacion */
 /* ESTILO FORMULARIO COTIZACION */
 .cotizacion {
-  background-image: url(../img/undraw_personal_info_re_ur1n.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding: 0 2.4rem;
-  margin-bottom: 5%; }
+  margin-bottom: 5rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
   .cotizacion__form {
+    width: 30vw;
     text-align: center;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 60%;
+    margin-left: 5rem;
     border-style: groove;
     border-color: #0bf0fc;
     border-width: .5rem;
@@ -354,7 +363,7 @@ li {
       .cotizacion__form .labels__pago {
         font-size: 1em; }
     .cotizacion__form .inputs {
-      width: 60%;
+      width: 70%;
       height: 2.5rem; }
     .cotizacion__form .inputs:focus {
       outline-color: #df8d4e;
@@ -362,6 +371,9 @@ li {
       outline-style: groove; }
     .cotizacion__form ::placeholder {
       text-align: center; }
+  .cotizacion__img {
+    width: 50vw;
+    margin-right: 5rem; }
 
 /* ESTILO BOTON COTIZACION */
 #enviar {
@@ -380,28 +392,28 @@ li {
 /* Contacto */
 /* Style contacto.html */
 .contact {
-  font-family: "Zilla Slab", serif;
-  background-image: url(../img/undraw_contact_us_re_4qqt.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50vw;
-  margin: 10rem; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10rem;
+  margin: 5rem; }
   .contact__conteiner {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: #ffffff40;
+    box-shadow: 0 8px 32px 0 #1f26875e;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    width: fit-content;
-    padding: 5rem; }
+    border: 1px solid #ffffff2e;
+    width: 50vw;
+    padding-left: 1rem;
+    margin-left: 4rem; }
   .contact__link {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 1.4em;
-    color: #0f0c68 !important;
+    color: #002841 !important;
     display: inline-block;
-    margin-top: 6rem;
-    margin-left: 1rem;
+    margin: 4rem 1rem;
     transition: all .6s; }
   .contact__link:hover {
     background-color: #e9f9f1;
@@ -409,10 +421,13 @@ li {
     border-radius: 1rem; }
   .contact__icon {
     width: 4.5rem; }
+  .contact__img {
+    width: 50vw; }
 
 /* Footer */
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0;
@@ -427,13 +442,14 @@ li {
     text-align: center; }
   .footer .footer__redes {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     width: 30%; }
 
 /* @mediaquerys */
-/* MEDIAQUERY PARA 970PX - formulario cotizacion */
+/* MEDIAQUERY PARA 970PX */
 @media only screen and (max-width: 970px) {
   .navbar {
     margin: 2.4rem;
@@ -443,15 +459,36 @@ li {
     line-height: 1.5;
     border-radius: 2rem; }
   .cotizacion {
-    background-image: none;
-    margin: auto; }
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; }
     .cotizacion .page_title {
       font-size: 4em;
       padding: 2rem; }
     .cotizacion .cotizacion__form {
       width: 75%;
       margin: 0 auto;
-      border-style: groove; } }
+      border-style: groove; }
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 5rem;
+    padding: 10rem 0; }
+    .contact__conteiner {
+      margin: 0 auto;
+      padding: 1.4rem; }
+    .contact .contact__link {
+      font-size: 1em;
+      display: inline-block;
+      margin: 2rem .5rem; }
+    .contact .contact__icon {
+      width: 2.5rem; } }
 
 /* MEDIAQUERY PARA 770PX - TAMAÑO TABLET */
 @media only screen and (max-width: 770px) {
@@ -479,7 +516,6 @@ li {
       font-size: 1em; }
   /* @media para sobrEMi */
   .sobreMi {
-    font-size: 1em;
     display: grid;
     justify-items: center;
     padding: 0;
@@ -490,7 +526,7 @@ li {
     .sobreMi h2 {
       font-size: 1.4em; }
     .sobreMi img {
-      width: 75vw;
+      width: 85vw;
       margin-top: .5rem;
       filter: drop-shadow(16px 16px 10px black);
       border-style: groove;
@@ -502,7 +538,7 @@ li {
     grid-template-rows: repeat(6, 1fr);
     row-gap: 2.4rem; }
     .automotores h2 {
-      font-size: 2em; }
+      font-size: 1.4em; }
     .automotores .automotores__content--d {
       grid-column: 1/5;
       grid-row: 1/2; }
@@ -522,7 +558,7 @@ li {
       grid-column: 1/5;
       grid-row: 6/7; }
     .automotores p {
-      font-size: 1.4em; }
+      font-size: 1em; }
   /* @media para praxis */
   .praxis {
     padding: 0 5rem; }
@@ -537,7 +573,6 @@ li {
       margin-bottom: 2.4rem; }
   /* @media para cotizacion */
   .cotizacion {
-    background-image: none;
     margin: 0 auto; }
     .cotizacion .page_title {
       font-size: 2em;
@@ -545,6 +580,8 @@ li {
     .cotizacion .cotizacion__form {
       margin: 0 auto;
       border-style: groove; }
+    .cotizacion img {
+      display: none; }
   #enviar {
     border-radius: 2rem;
     width: 80%;
@@ -552,24 +589,25 @@ li {
     margin-bottom: 1rem; }
   /* @media para contacto */
   .contact {
-    background-size: 100%;
     margin: 0 5rem;
     padding: 10rem 0; }
     .contact__conteiner {
+      width: max-content;
       margin: 0 auto;
       padding: 1.4rem; }
     .contact .contact__link {
-      font-size: 1.4em;
+      font-size: 1em;
       display: inline-block;
-      margin-top: 4rem;
-      margin-left: 1rem; }
+      margin: 2rem .5rem; }
     .contact .contact__icon {
       width: 2.5rem; }
+    .contact__img {
+      width: 70vw; }
   /* @media para footer */
   .footer {
+    height: 25vh;
     flex-direction: column-reverse;
-    font-size: 1em;
-    grid-area: c; }
+    font-size: 1em; }
     .footer .footer__texto {
       text-align: center; } }
 
@@ -596,7 +634,6 @@ li {
       .cotizacion .cotizacion__form textarea {
         width: 80%; }
   .contact {
-    background-size: 100%;
     margin: 0 2.4rem;
     padding: 5rem 0; }
     .contact .contact__link {
