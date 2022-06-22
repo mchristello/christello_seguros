@@ -12,13 +12,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/translated.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="contact">
 
     <!-- Navbar con Bootstrap -->
 
-    <nav class="navbar bg-light navbar-expand-lg" data-aos="fade-down">
+    <nav class="navbar bg-light navbar-expand-lg">
         <section class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img id="sublogo" src="../img/Matias Christello_llogo 1.png" width="100"
                 alt="logo Matias Christello"></a>
@@ -95,7 +96,7 @@
     <h1 class="page_title"><u>Formas de Contacto </u></h1>
 
     <section class="contact">
-        <div class="contact__conteiner">        
+        <div class="contact__conteiner" data-aos="fade-right" data-aos-duration="1500">        
             <img class="contact__icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkhJREFUSEvFlk1u00AUx/8vUwl2LTuMkGhPQHoC0hMw3SeQG1ScAPcEqCfA4Ow7nKD0BOQGTaSq3jq7VKr70NhJ46/xzHiTt7Vnfu8/75OwJ6M9ceENluNkRAM65GceaqdpQHMwp9dxcOsjwgksp/dDZOICIAnwUTuAUoAVRHalovdzmxOdYDm9O0L2+geAqe2i2vcIYv1NRSep6ZwRvFF5DeDYE7r9fQGRnZvUt4IL6MGN+VldXaEU4umsDd4Ab573n6PSJYgVoOO7McYIwKeSawuI9Wn92ZvgcRKB8NWqifgKg8ewfqH8koRgfK+cZ/xSs6CSJxXwJq5arc1uVRxoZQ1rBeu/BE5UFCy2B6pgV7XM52r2TpWpeX0TmIsKaFZBTXUVPEl0rA5tciGy03LCyMmDjvPn7nOUqvjtm4Zi7TEIN1YoABUHdYfZ5RwYZ2oW/M073vaAHD9IEOm6tVp/8C5EO3BbNhpc6A0mXKrfQVhV3A02ZnHdt854t4Inic7EnwaRPuA5QB9b7ylVQynGncnlAU7MiVaqBtdyWoARbVWoWXBZqWEdpmcUQEIewxZbqTh4Gam9Gkiv5OpsINPkGBnubPXUC9zVMjXQpQt5g21DIgcXW4deXT6YlHuClxDroXUsFvB8x9KtrbVve4BXENnIaRF4aaEFXE+ghnJH8BIik16rzw6un/1VVJ88djD/gXic9lr2KnWqs/0JIQhSP78BvAJD4QBheeCb8sRpr646cT+sP5/OCZddunyPN9hW467f9wb+D5p6JC6G7aedAAAAAElFTkSuQmCC" alt="logo facebook"/>
             <a href="https://www.facebook.com/mchristello.seguros" class="contact__link link-success" target="_blank">Matias Christello - PAS. </a><br>
@@ -136,9 +137,17 @@
                     alt="logo whataspp"></a>
         </div>
     </footer>
+
+    <!-- Scripts de Bootstrap y AOS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

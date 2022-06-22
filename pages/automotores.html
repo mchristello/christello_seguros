@@ -11,13 +11,14 @@
     <link id="favicon" rel="icon" href="../img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/translated.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Navbar con Bootstrap -->
 
-    <nav class="navbar bg-light navbar-expand-lg" data-aos="fade-down">
+    <nav class="navbar bg-light navbar-expand-lg">
         <section class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img id="sublogo" src="../img/Matias Christello_llogo 1.png" width="100"
                 alt="logo Matias Christello"></a>
@@ -94,7 +95,7 @@
 
         <h1 class="page_title"><u>Coberturas.</u></h1>
         <section class="automotores">
-                <article class="automotores__content--d">
+                <article class="automotores__content--d" data-aos="fade-down-left" data-aos-duration="2000">
                     <h2><u>Todo Riesgo Sin Franquia.</u></h2>
                         <p>- <span class="destacado">Robo total y parcial</span> sin franquicia (incluye llantas originales de fábrica, cubiertas y auxilio, entre otras).</p>
                         <p>- <span class="destacado">Incendio total y parcial sin franquicia</p>
@@ -107,7 +108,7 @@
                         <p>- Asistencia legal gratuita</p>
                 </article>
 
-                <article class="automotores__content--d3">
+                <article class="automotores__content--d3" data-aos="fade-down-right" data-aos-duration="2000">
                     <h2><u>Todo Riesgo Con Franquia Variable.</u></h2>
                         <p>- <span class="destacado">Robo total y parcial</span> sin franquicia (incluye llantas originales de fábrica, cubiertas y auxilio, entre
                             otras).</p>
@@ -122,7 +123,7 @@
                         <p>- Asistencia legal gratuita</p>
                 </article>
 
-                <article class="automotores__content--c7">
+                <article class="automotores__content--c7" data-aos="zoom-out-left" data-aos-duration="2000">
                     <h2><u>Terceros Completos Premium.</u></h2>
                         <p>- <span class="destacado">Robo total y parcial</span> (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
                         <p>- <span class="destacado">Incendio total y parcial</span>.</p>
@@ -134,7 +135,7 @@
                         <p>- Asistencia legal gratuita.</p>
                 </article>
 
-                <article class="automotores__content--c2">
+                <article class="automotores__content--c2" data-aos="zoom-out-right" data-aos-duration="2000">
                     <h2><u>Terceros Completos.</u></h2>
                         <p>- <span class="destacado">Robo total y parcial</span> (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
                         <p>- <span class="destacado">Incendio total y parcial</span>.</p>
@@ -146,7 +147,7 @@
                         <p>- Asistencia legal gratuita.</p>
                 </article>
 
-                <article class="automotores__content--c">  
+                <article class="automotores__content--c" data-aos="fade-up-right" data-aos-duration="2000">  
                     <h2><u>Terceros Total y Parcial.</u></h2>
                         <p>- <span class="destacado">Robo total y parcial</span> (incluye llantas originales de fábrica, ruedas y auxilio, entre otras).</p>
                         <p>- <span class="destacado">Incendio total y parcial</span>.</p>
@@ -156,7 +157,7 @@
                         <p>- Asistencia legal gratuita.</p>
                 </article>
 
-                <article class="automotores__content--b1">
+                <article class="automotores__content--b1" data-aos="fade-up-left" data-aos-duration="2000">
                     <h2><u>Terceros Total.</u></h2>
                         <p>- <span class="destacado">Robo total</span> (NO incluye llantas originales de fábrica, ruedas ni auxilio).</p>
                         <p>- <span class="destacado">Incendio total</span>.</p>
@@ -187,7 +188,13 @@
         </div>
     </footer>
 
+    <!-- Scripts de Bootstrap y AOS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     
 </body>

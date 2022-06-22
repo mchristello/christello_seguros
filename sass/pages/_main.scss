@@ -1,15 +1,13 @@
 
 .main {
-    font-size: map-get($font-sizes, text-small);
     margin: 0 $spacing-medium;
-    margin-bottom: $spacing-small;
     line-height: 1.5;
-    font-family: $font-roboto;
+    font-family: $font-principal;
     color: $text-color;
     text-align: center;
 
-    &--flex {
-        @include flex(row, center, center, 0);
+    &--flex {        
+        @include flex(row, center, flex-start, 0);
     }
 
     &--flex img {
@@ -20,6 +18,8 @@
     }
 
     &--flex div {
+        font-size: map-get($font-sizes, text-intermidiate);
         margin-left: $spacing-small;
+        width: 50vw;
     }
 }

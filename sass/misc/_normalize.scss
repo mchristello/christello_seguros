@@ -30,5 +30,5 @@ body {
 }
 
 .destacado {
-    @include destacado(#00043b, normal, bold);
+    @include destacado(#2f3588, italic, 700);
 }

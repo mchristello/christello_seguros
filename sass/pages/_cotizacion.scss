@@ -18,7 +18,7 @@
         background-size: cover;
         line-height: 1.5;
         box-shadow: -15px 5px 10px rgb(70, 80, 68);
-        .labels {
+        & .labels {
             text-decoration: underline;
             font-weight: bold;
             font-size: map-get($font-sizes, text-small);

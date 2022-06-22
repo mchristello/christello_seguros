@@ -6,8 +6,8 @@
     gap: $gap;
 }
 
-@mixin destacado($color, $font-style, $font-weight) {
+@mixin destacado($color, $style, $weight) {
     color: $color;
-    font-style: $font-style;
-    font-weight: $font-weight;
+    font-style: $style;
+    font-weight: $weight;
 }
